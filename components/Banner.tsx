@@ -2,7 +2,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import details from '../lib/details.json';
+import details from '@/lib/details.json';
 import {
   FaEthereum,
   FaLinkedin,
@@ -14,7 +14,7 @@ import {
   FaDonate,
 } from 'react-icons/fa';
 import Link from 'next/link';
-import { FaHashnode } from 'react-icons/fa6';
+import { FaHashnode, FaUpwork } from 'react-icons/fa6';
 
 const borderColors = [
   'border-yellow-400',
@@ -40,6 +40,7 @@ const iconComponents: { [key: string]: React.ElementType } = {
   Telegram: FaTelegram,
   Email: FaEnvelope,
   Donate: FaDonate,
+  Upwork: FaUpwork,
 };
 
 export function Banner() {
@@ -58,7 +59,7 @@ export function Banner() {
   return (
     <div className='flex items-center justify-between w-4/5 mx-auto my-20 md:flex-row flex-col md:gap-0 gap-10'>
       <div className='flex flex-col items-center md:w-4/6 w-11/12 justify-center text-center gap-4'>
-        <h1 className='text-6xl font-bold mb-4'>{details.salam}</h1>
+        <h1 className='md:text-6xl font-bold mb-4 text-5xl'>{details.salam}</h1>
         <h2 className='text-2xl font-semibold mb-4 bg-orange-200 rounded px-2 flex items-center animate-bounce'>
           <FaEthereum />
           {details.tagline}

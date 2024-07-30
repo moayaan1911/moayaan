@@ -1,0 +1,190 @@
+{
+  "salam": "👋 ٱلسَّلَامُ عَلَيْكُمْ",
+  "tagline": "moayaan.eth",
+  "description": "Hello everyone, I am Mohammad Ayaan Siddiqui, a self-taught Full Stack Blockchain Developer, Technical Content-Writer, Crypto Investor, and Decentralization MAXI",
+  "profile": "/profile.jpeg",
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/ayaaneth"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/moayaan1911"
+    },
+    {
+      "name": "Hashnode",
+      "link": "https://blog.moayaan.com"
+    },
+    {
+      "name": "Upwork",
+      "link": "https://www.upwork.com/freelancers/mdayaans"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/web3guideindia"
+    },
+    {
+      "name": "BuyMeACoffee",
+      "link": "https://www.buymeacoffee.com/moayaan.eth"
+    },
+    {
+      "name": "Telegram",
+      "link": "https://t.me/usdisshitcoin"
+    },
+    {
+      "name": "Email",
+      "link": "mailto:ayaangames@gmail.com"
+    },
+    {
+      "name": "Donate",
+      "link": "https://donate.unrwa.org/gaza/~my-donation"
+    }
+  ],
+  "experience": [],
+  "skills": [
+    {
+      "name": "Next.js",
+      "image": "/next_js.svg",
+      "type": "web2"
+    },
+    {
+      "name": "MERN Stack",
+      "image": "/mern.png",
+      "type": "web2"
+    },
+    {
+      "name": "Solidity",
+      "image": "/solidity.png",
+      "type": "web3"
+    },
+    {
+      "name": "Hardhat",
+      "image": "/hardhat.png",
+      "type": "web3"
+    },
+    {
+      "name": "Foundry",
+      "image": "/foundry.png",
+      "type": "web3"
+    },
+    {
+      "name": "Rust",
+      "image": "/rust.png",
+      "type": "web3"
+    },
+    {
+      "name": "Web3.js/Ethers.js",
+      "image": "/web3_js.png",
+      "type": "web3"
+    },
+    {
+      "name": "Tailwind",
+      "image": "/tailwind.png",
+      "type": "web2"
+    },
+    {
+      "name": "Python",
+      "image": "/python.png",
+      "type": "web2"
+    },
+    {
+      "name": "JavaScript",
+      "image": "/javascript.png",
+      "type": "web2"
+    },
+    {
+      "name": "TypeScript",
+      "image": "/typescript.png",
+      "type": "web2"
+    },
+    {
+      "name": "Git and GitHub",
+      "image": "/git.png",
+      "type": "others"
+    },
+    {
+      "name": "Technical Writing",
+      "image": "/blogging.png",
+      "type": "others"
+    },
+    {
+      "name": "MetaMask",
+      "image": "/metamask.png",
+      "type": "others"
+    },
+    {
+      "name": "Prompt Engineering",
+      "image": "/prompt.png",
+      "type": "others"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Kronobits",
+      "description": "Landing page for Kronobits built as a FREELANCER using Next.js and Aceternity UI",
+      "image": "/kronobits.png",
+      "link": "https://www.kronobits.com"
+    },
+    {
+      "title": "CrowdFunding dApp",
+      "description": "Decentralized Crowdfunding dapp built using Next.js, Thirdweb and Hard Hat",
+      "image": "/crowdfunding.png",
+      "link": "https://zkfund.vercel.app/",
+      "github": "https://github.com/moayaan1911/crowdfunding",
+      "demo": "https://youtu.be/jGEStOsKON0?si=3IjPS5v2jwc_3RBB"
+    },
+    {
+      "title": "AI NFT Minter",
+      "description": "AI NFT generator and gasless minter built using HuggingFace and Next.js",
+      "image": "/ai-nft.png",
+      "link": "https://powered-heroes.vercel.app/",
+      "github": "https://github.com/moayaan1911/powered",
+      "demo": "https://youtu.be/MZUSn3nxb3U?si=tnq54C-wUVA9jwL7"
+    },
+    {
+      "title": "Npm Package full3",
+      "description": "NPM package named full3, a starter template",
+      "image": "/full3.png",
+      "link": "https://www.npmjs.com/package/full3",
+      "github": "https://github.com/moayaan1911/full3"
+    },
+    {
+      "title": "Decentralized Exchange Swap dApp",
+      "description": "Defi Swap built on ethereum mainnet using 0xProtocol and Next.js",
+      "image": "/genesis.png",
+      "link": "https://genesis-eth-swap.vercel.app/",
+      "github": "https://github.com/moayaan1911/genesis-eth-swap",
+      "demo": "https://youtu.be/8LMMBJbQgbs?si=FiXtCimmVCHHRVLq"
+    },
+    {
+      "title": "ERC 404 smart contract",
+      "description": "Implementation of erc 404 smart contract",
+      "image": "/erc404.png",
+      "github": "https://github.com/moayaan1911/erc404-uniswap",
+      "demo": "https://youtu.be/oAXGSCuEQ0Q?si=9wcR18irvjBgydtI"
+    },
+    {
+      "title": "FINSTAR AVENUE",
+      "description": "Landing page for Finstar Avenue built as a FREELANCER using Next.js and Tailwind CSS",
+      "image": "/finstar.png",
+      "link": "https://finstaravenue.com/"
+    },
+    {
+      "title": "GeoMint",
+      "description": "Mint your geographic location into unique NFTs.",
+      "image": "/geomint.png",
+      "link": "https://geomint.onrender.com/",
+      "github": "https://github.com/moayaan1911/geomint",
+      "demo": "https://youtu.be/q0QosOD_d_k?si=OgO4kLjMA-OuBSic"
+    },
+    {
+      "title": "PolyCloud",
+      "description": "Decentralized Storage web app.",
+      "image": "/PolyCloud.png",
+      "link": "https://polycloud.vercel.app/",
+      "github": "https://github.com/moayaan1911/polycloud",
+      "demo": "https://youtu.be/YlsXJIYxVbc?si=iFzBajcgcQsmT9kc"
+    }
+  ]
+}

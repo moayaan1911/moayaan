@@ -27,11 +27,11 @@ export function ProjectCard({
   demo,
 }: ProjectCardProps) {
   return (
-    <CardContainer className='inter-var'>
-      <CardBody className='bg-blue-300 h-[30rem] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] rounded-xl px-6 py-2 border flex flex-col items-center justify-evenly'>
+    <CardContainer className=''>
+      <CardBody className='bg-blue-300 h-[24rem] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] rounded-xl px-6 py-2 border flex flex-col items-center justify-evenly -mb-20'>
         <CardItem
           translateZ='50'
-          className='text-3xl font-bold text-white text-center'>
+          className='text-2xl font-bold text-white text-center'>
           {title}
         </CardItem>
         <CardItem
@@ -43,12 +43,12 @@ export function ProjectCard({
 
         <CardItem
           translateZ='100'
-          className='w-full mt-4'>
+          className='w-full'>
           <Image
             src={image}
-            height='1000'
-            width='1000'
-            className='h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl'
+            height={300}
+            width={700}
+            className='max-h-40 rounded-lg'
             alt='thumbnail'
           />
         </CardItem>
