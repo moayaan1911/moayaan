@@ -1,11 +1,10 @@
 /** @format */
 
+import { Background } from '@/components/Background';
 import { Banner } from '@/components/Banner';
-import { ProjectCard } from '@/components/ProjectCard';
+import { Experiences } from '@/components/Experiences';
 import { Projects } from '@/components/Projects';
 import { SkillsComponent } from '@/components/SkillsComponent';
-import { SkillsTab } from '@/components/SkillsTab';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -13,6 +12,8 @@ export default function Home() {
       <Banner />
       <SkillsComponent />
       <Projects />
+      <Experiences />
+      <Background />
     </div>
   );
 }

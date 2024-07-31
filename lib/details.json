@@ -186,5 +186,52 @@
       "github": "https://github.com/moayaan1911/polycloud",
       "demo": "https://youtu.be/YlsXJIYxVbc?si=iFzBajcgcQsmT9kc"
     }
-  ]
+  ],
+  "experiences": [
+    {
+      "company": "Digichain Global Holdings LLC",
+      "designation": "Freelance Blockchain Developer",
+      "timeline": "August 2024 - Present",
+      "jobType": "freelancing",
+      "image": "/digichain.jpg"
+    },
+    {
+      "company": "Cypherock",
+      "designation": "Full Stack web3 Developer intern",
+      "timeline": "April 2024 - July 2024",
+      "jobType": "internship",
+      "link": "https://www.cypherock.com/",
+      "image": "/cypherock.png"
+    },
+    {
+      "company": "Finstar Avenue",
+      "designation": "Tech Advisor and Freelance Developer (Part Time)",
+      "timeline": "Feb 2024 - July 2024",
+      "jobType": "freelancing",
+      "link": "https://finstaravenue.com/",
+      "image": "/finstar.png"
+    },
+    {
+      "company": "D Frame Foundation",
+      "designation": "Founding Team Member and Full Stack Blockchain Developer",
+      "timeline": "December 2022 - March 2024",
+      "jobType": "full-time",
+      "link": "https://dframe.org/",
+      "image": "/dframe.png"
+    },
+    {
+      "company": "EmergentX",
+      "designation": "Blockchain Research Intern",
+      "timeline": "December 2021 - March 2022",
+      "jobType": "internship",
+      "link": "https://www.emergentx.io/",
+      "image": "/emergentx.jpeg"
+    }
+  ],
+
+  "connect": {
+    "title": "Hover Me 👆😄",
+    "description": "Hey there! 👋 Whether you want to chat about cryptocurrencies, web3, or just need some advice, I'm here to help! 💡 If you're looking for a skilled developer for freelance or full-time opportunities, let's discuss how I can contribute to your projects. 🚀 Feel free to reach out, and let's explore the exciting world of blockchain together! 🌟",
+    "hover": "Let's Connect! 🌐"
+  }
 }

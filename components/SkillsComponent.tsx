@@ -8,7 +8,7 @@ export function SkillsComponent() {
   return (
     <>
       <div className='my-14'>
-        <div className='flex items-center gap-2 text-4xl text-center justify-center font-semibold text-black'>
+        <div className='flex items-center gap-2 md:text-4xl text-2xl text-center justify-center font-semibold text-black'>
           My Skills <GiSkills />
         </div>
       </div>
