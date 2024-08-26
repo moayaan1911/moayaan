@@ -8,7 +8,7 @@ import { SkillsComponent } from '@/components/SkillsComponent';
 
 export default function Home() {
   return (
-    <div className='h-screen w-screen bg-gradient-animation overflow-x-hidden'>
+    <div className='h-screen w-screen bg-slate-800 overflow-x-hidden'>
       <Banner />
       <SkillsComponent />
       <Projects />

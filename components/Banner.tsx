@@ -59,13 +59,15 @@ export function Banner() {
   return (
     <div className='flex items-center justify-between w-4/5 mx-auto my-20 md:flex-row flex-col md:gap-0 gap-10'>
       <div className='flex flex-col items-center md:w-4/6 w-11/12 justify-center text-center gap-4'>
-        <h1 className='md:text-6xl font-bold mb-4 text-5xl'>{details.salam}</h1>
+        <h1 className='md:text-6xl font-bold mb-4 text-5xl text-white'>
+          {details.salam}
+        </h1>
         <h2 className='text-2xl font-semibold mb-4 bg-orange-200 rounded px-2 flex items-center animate-bounce'>
           <FaEthereum />
           {details.tagline}
           <FaEthereum />
         </h2>
-        <p className='font-bold italic text-slate-700'>{details.description}</p>
+        <p className='font-bold italic text-slate-300'>{details.description}</p>
         <div className='flex flex-wrap justify-center gap-6 mt-4'>
           {details.socials.map((social, index) => {
             const IconComponent = iconComponents[social.name];
@@ -87,7 +89,7 @@ export function Banner() {
         alt='Profile'
         width={300}
         height={300}
-        className={`rounded-full border-4 ${borderColors[borderColorIndex]}`}
+        className={`rounded-full`}
         priority={true}
       />
     </div>
