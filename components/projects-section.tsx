@@ -8,10 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { details } from "@/lib/details"
 import Image from "next/image"
 import { FaGithub, FaExternalLinkAlt, FaPlay, FaStar } from "react-icons/fa"
-import { useState } from "react"
-
 export function ProjectsSection() {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null)
 
   const featuredProjects = details.projects.filter((project) => project.featured)
   const otherProjects = details.projects.filter((project) => !project.featured)
@@ -24,8 +21,6 @@ export function ProjectsSection() {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ scale: 1.02, rotateX: 5 }}
-      onHoverStart={() => setHoveredProject(index)}
-      onHoverEnd={() => setHoveredProject(null)}
       className="group"
     >
       <Card className="h-full bg-gradient-to-br from-gray-900/80 to-gray-800/80 border-gray-700 hover:border-purple-400/50 transition-all duration-500 backdrop-blur-sm overflow-hidden relative">
@@ -105,22 +100,7 @@ export function ProjectsSection() {
           </div>
         </CardContent>
 
-        <motion.div
-          className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-purple-400/20 via-blue-400/20 to-teal-400/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-          animate={
-            hoveredProject === index
-              ? {
-                  background: [
-                    "linear-gradient(0deg, rgba(139,92,246,0.2), rgba(59,130,246,0.2), rgba(6,182,212,0.2))",
-                    "linear-gradient(90deg, rgba(139,92,246,0.2), rgba(59,130,246,0.2), rgba(6,182,212,0.2))",
-                    "linear-gradient(180deg, rgba(139,92,246,0.2), rgba(59,130,246,0.2), rgba(6,182,212,0.2))",
-                    "linear-gradient(270deg, rgba(139,92,246,0.2), rgba(59,130,246,0.2), rgba(6,182,212,0.2))",
-                  ],
-                }
-              : {}
-          }
-          transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-        />
+        <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-purple-400/20 via-blue-400/20 to-teal-400/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
       </Card>
     </motion.div>
   )

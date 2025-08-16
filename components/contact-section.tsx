@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { details } from "@/lib/details";
-import { FaEnvelope, FaRocket, FaDownload, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaDownload } from "react-icons/fa";
 
 export function ContactSection() {
   return (
@@ -41,7 +41,7 @@ export function ContactSection() {
                   onClick={() =>
                     window.open(`mailto:${details.connect.email}`, "_blank")
                   }>
-                  <FaPaperPlane className="mr-3 text-xl" />
+                  <FaEnvelope className="mr-3 text-xl" />
                   Get in Touch
                 </Button>
 
@@ -50,7 +50,7 @@ export function ContactSection() {
                   variant="outline"
                   className="border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 bg-transparent"
                   onClick={() => {
-                    window.open(details.resume, "_blank");
+                    window.open("/AyaanResume.pdf", "_blank");
                   }}>
                   <FaDownload className="mr-3 text-xl" />
                   View Resume

@@ -126,12 +126,13 @@ export const details = {
     {
       title: "CrowdFunding dApp",
       description:
-        "Decentralized Crowdfunding dapp built using Next.js, Thirdweb and Hard Hat",
+        "Decentralized Crowdfunding dapp built using Next.js, Thirdweb and HardHat",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/crowdfunding.png",
       link: "https://zkfund.vercel.app/",
       github: "https://github.com/moayaan1911/crowdfunding",
       demo: "https://youtu.be/jGEStOsKON0?si=3IjPS5v2jwc_3RBB",
+      featured: true,
       tags: ["Next.js", "Thirdweb", "Hardhat", "Web3"],
     },
     {
@@ -144,16 +145,6 @@ export const details = {
       github: "https://github.com/moayaan1911/powered",
       demo: "https://youtu.be/MZUSn3nxb3U?si=tnq54C-wUVA9jwL7",
       tags: ["AI", "NFT", "HuggingFace", "Next.js"],
-    },
-    {
-      title: "GeoMint",
-      description: "Mint your geolocation as an NFT.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/geomint.png",
-      link: "https://geomint.onrender.com/",
-      github: "https://github.com/moayaan1911/geomint",
-      demo: "https://youtu.be/q0QosOD_d_k?si=1hVWQ9NAt-ZqqRj5",
-      tags: ["NFT", "Geolocation", "Web3"],
     },
     {
       title: "Finstar Avenue",
@@ -193,7 +184,6 @@ export const details = {
       link: "https://powered-v2.vercel.app/",
       github: "https://github.com/moayaan1911/powered-v2",
       demo: "https://youtu.be/fzPOrj5_gI8?si=2JzYQ5aDyBjkKhzW",
-      featured: true,
       tags: ["AI", "NFT", "Gasless", "Web3"],
     },
     {
@@ -212,7 +202,7 @@ export const details = {
       company: "Digichain Global Holdings LLC",
       designation: "Contract Blockchain Developer",
       timeline: "Aug 2024 - Present",
-      link: null,
+      link: "https://bima.money",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/bima.jpg",
       tags: ["Contract"],
@@ -325,14 +315,11 @@ export const details = {
       "🚀 I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision.\n\n💬 Feel free to reach out!",
     email: "moayaan.eth@gmail.com",
     location: "India",
-    thankYouMessage:
-      "🙏 Thanks for exploring my work! ✨",
+    thankYouMessage: "🙏 Thanks for exploring my work! ✨",
     celebrationGif:
       "https://media1.tenor.com/m/yTsLVmcpUGsAAAAC/stake-staking.gif",
   },
   footer: {
-    creditText: "Vibe Coded with Claude-Code and Cursor",
+    creditText: "Vibe Coded with Claude-Code and v0",
   },
-  resume:
-    "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/AyaanResume.pdf",
 };

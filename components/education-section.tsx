@@ -76,7 +76,7 @@ export function EducationSection() {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-amber-400 text-amber-400 hover:bg-amber-400/20 bg-transparent cursor-pointer"
+                        className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent cursor-pointer"
                         onClick={() => window.open(edu.degreeLink!, "_blank")}
                       >
                         <FaDownload className="mr-2" />
@@ -127,10 +127,10 @@ export function EducationSection() {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
               >
-                <Card className="bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-amber-400/50 transition-all duration-300 backdrop-blur-sm">
+                <Card className="bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 backdrop-blur-sm">
                   <CardContent className="p-6 text-center space-y-4">
                     <div className="relative mx-auto w-16 h-16">
-                      <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-600 rounded-lg blur-sm opacity-50" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-teal-600 rounded-lg blur-sm opacity-50" />
                       <Image
                         src={cert.image || "/placeholder.svg"}
                         alt={cert.provider}
@@ -142,14 +142,14 @@ export function EducationSection() {
 
                     <h4 className="text-lg font-bold text-white">{cert.title}</h4>
 
-                    <p className="text-amber-400 font-semibold">{cert.provider}</p>
+                    <p className="text-cyan-400 font-semibold">{cert.provider}</p>
 
                     <p className="text-gray-400 text-sm">{cert.date}</p>
 
                     <Button
                       size="sm"
                       variant="outline"
-                      className="border-amber-400 text-amber-400 hover:bg-amber-400/20 bg-transparent cursor-pointer"
+                      className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent cursor-pointer"
                       onClick={() => window.open(cert.certificateLink, "_blank")}
                     >
                       <FaExternalLinkAlt className="mr-2" />
