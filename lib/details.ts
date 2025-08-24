@@ -297,6 +297,13 @@ export const details = {
   ],
   certifications: [
     {
+      title: "Foundry Fundamentals",
+      provider: "Cyfrin Updraft",
+      date: "August 2025",
+      certificateLink: "https://profiles.cyfrin.io/u/moayaan1911/achievements/foundry",
+      image: "https://gateway.lighthouse.storage/ipfs/bafkreihqnitpcwkamlx2fczoilqvhg7nzgutomqybnlrh2s2le3sqzjudy",
+    },
+    {
       title: "Generative AI Foundations",
       provider: "Upgrad in Collaboration with Microsoft",
       date: "May 2025",
