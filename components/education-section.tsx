@@ -8,8 +8,9 @@ import Image from "next/image";
 import {
   FaGraduationCap,
   FaExternalLinkAlt,
-  FaDownload,
   FaCalendarAlt,
+  FaCertificate,
+  FaUserGraduate,
 } from "react-icons/fa";
 
 export function EducationSection() {
@@ -89,9 +90,38 @@ export function EducationSection() {
                         variant="outline"
                         className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent cursor-pointer"
                         onClick={() => window.open(edu.degreeLink!, "_blank")}>
-                        <FaDownload className="mr-2" />
+                        <FaUserGraduate className="mr-2" />
                         View Degree
                       </Button>
+                    )}
+
+                    {(edu as any).pgDiplomaLink && (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent cursor-pointer"
+                        onClick={() =>
+                          window.open((edu as any).pgDiplomaLink!, "_blank")
+                        }>
+                        <FaCertificate className="mr-2" />
+                        View PG Diploma
+                      </Button>
+                    )}
+
+                    {edu.degree.includes("MBA") && (
+                      <div className="relative group">
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          disabled
+                          className="border-gray-600 text-gray-500 bg-transparent cursor-not-allowed opacity-50">
+                          <FaUserGraduate className="mr-2" />
+                          View Degree
+                        </Button>
+                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-2 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
+                          Ongoing - Degree not received yet
+                        </div>
+                      </div>
                     )}
                   </div>
 

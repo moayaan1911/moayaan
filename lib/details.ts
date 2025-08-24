@@ -118,13 +118,13 @@ export const details = {
     {
       title: "QuickDapp",
       description:
-        "Your complete Web3 dApp starter template with smart contracts, wallet connectivity, and AI assistant.",
+        "An NPM Package that sets up your complete Web3 dApp starter template with smart contracts, gasless wallet connectivity, and AI assistant.",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafkreie26hweqarznpjdddi7l2j5dfl7xjsaxvx2iccliuffgk6grvqu6e",
       link: "https://www.npmjs.com/package/quickdapp",
       github: "https://github.com/moayaan1911/quickdapp",
       featured: true,
-      tags: ["Web3", "Template", "Smart Contracts", "AI"],
+      tags: ["Web3", "Template", "Smart Contracts", "AI", "NPM Package"],
     },
     {
       title: "LayerZero Token Transfer",
@@ -275,10 +275,12 @@ export const details = {
       timeline: "2024 - 2025 (Ongoing)",
       universityLink: "https://www.unimarconi.it/",
       degreeLink: null,
+      pgDiplomaLink: "https://gateway.lighthouse.storage/ipfs/bafkreiaolsp5choxmlcmufdgn6qjipxjkae2lf5ye47ln74ihcncoxeu2e",
+      mbaLink: null,
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/mba.jpeg",
       description:
-        "Advanced strategic management education focusing on project management, technical leadership, international marketing, decision-making frameworks, and human resources management in the blockchain industry.",
+        "Online MBA in Blockchain Management with Additional PG Diploma in Blockchain Management. Advanced strategic management education focusing on project management, technical leadership, international marketing, decision-making frameworks, and human resources management in the blockchain industry.",
     },
     {
       degree: "B.Tech in Computer Science and Engineering",
@@ -290,7 +292,7 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ptu.png",
       description:
-        "Comprehensive foundation in software engineering principles, system design, database management, and modern programming paradigms with hands-on experience in full-stack development.",
+        "Comprehensive foundation in foundational programming concepts, basic software engineering principles, database management, and modern programming paradigms with hands-on experience in full-stack development.",
     },
   ],
   certifications: [
