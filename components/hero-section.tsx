@@ -12,6 +12,7 @@ import {
   FaTelegram,
   FaEnvelope,
   FaCoffee,
+  FaUsers,
 } from "react-icons/fa";
 import { SiHashnode, SiUpwork } from "react-icons/si";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -24,6 +25,7 @@ const socialIcons = {
   Hashnode: SiHashnode,
   Upwork: SiUpwork,
   Twitter: RiTwitterXFill,
+  Peerlist: FaUsers,
   BuyMeACoffee: FaCoffee,
   Telegram: FaTelegram,
   Email: FaEnvelope,

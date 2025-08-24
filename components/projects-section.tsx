@@ -72,7 +72,7 @@ export function ProjectsSection() {
                 onClick={() => window.open(project.link, "_blank")}
               >
                 <FaExternalLinkAlt className="mr-2" />
-                Live Demo
+                Live Project
               </Button>
             )}
             {project.github && (

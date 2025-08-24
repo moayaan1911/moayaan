@@ -11,6 +11,7 @@ export const details = {
     { name: "Hashnode", link: "https://blog.moayaan.com" },
     { name: "Upwork", link: "https://www.upwork.com/freelancers/mdayaans" },
     { name: "Twitter", link: "https://x.com/moayaan1911" },
+    { name: "Peerlist", link: "https://peerlist.io/ayaaneth" },
     { name: "BuyMeACoffee", link: "https://coff.ee/moayaan.eth" },
     { name: "Telegram", link: "https://t.me/moayaan1911" },
     { name: "Donate", link: "https://donate.unrwa.org/gaza/~my-donation" },
@@ -115,13 +116,35 @@ export const details = {
   ],
   projects: [
     {
-      title: "Kronobits",
+      title: "QuickDapp",
       description:
-        "Landing page for Kronobits built as a FREELANCER using Next.js and Aceternity UI",
+        "Your complete Web3 dApp starter template with smart contracts, wallet connectivity, and AI assistant.",
       image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/next.jpeg",
-      link: "https://www.kronobits.com",
-      tags: ["Next.js", "Aceternity UI", "Freelance"],
+        "https://gateway.lighthouse.storage/ipfs/bafkreie26hweqarznpjdddi7l2j5dfl7xjsaxvx2iccliuffgk6grvqu6e",
+      link: "https://www.npmjs.com/package/quickdapp",
+      github: "https://github.com/moayaan1911/quickdapp",
+      featured: true,
+      tags: ["Web3", "Template", "Smart Contracts", "AI"],
+    },
+    {
+      title: "LayerZero Token Transfer",
+      description:
+        "A non-UI cli based contract implementation of LayerZero protocol for token transfer across chains.",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/layerzero.jpg",
+      github: "https://github.com/moayaan1911/layerzero-example",
+      featured: true,
+      tags: ["LayerZero", "Cross-chain", "CLI"],
+    },
+    {
+      title: "LoomLess",
+      description:
+        "A lightweight, Minimalist Chrome extension for effortless screen recording with clean, intuitive interface",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/loomless.png",
+      link: "https://chromewebstore.google.com/detail/loomless/hpblkhdjmbiokmnemdmccpppjeoddecj",
+      featured: true,
+      tags: ["Chrome Extension", "Screen Recording", "Minimalist"],
     },
     {
       title: "CrowdFunding dApp",
@@ -134,6 +157,27 @@ export const details = {
       demo: "https://youtu.be/jGEStOsKON0?si=3IjPS5v2jwc_3RBB",
       featured: true,
       tags: ["Next.js", "Thirdweb", "Hardhat", "Web3"],
+    },
+    {
+      title: "ERC-404 Token dApp",
+      description:
+        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
+      github: "https://github.com/moayaan1911/erc404-uniswap",
+      link: "https://cat404.vercel.app",
+      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
+      featured: true,
+      tags: ["ERC-404", "Uniswap", "Testnet"],
+    },
+    {
+      title: "Kronobits",
+      description:
+        "Landing page for Kronobits built as a FREELANCER using Next.js and Aceternity UI",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/next.jpeg",
+      link: "https://www.kronobits.com",
+      tags: ["Next.js", "Aceternity UI", "Freelance"],
     },
     {
       title: "AI NFT Minter",
@@ -155,28 +199,6 @@ export const details = {
       tags: ["Freelance", "Landing Page"],
     },
     {
-      title: "LayerZero Token Transfer",
-      description:
-        "A non-UI cli based contract implementation of LayerZero protocol for token transfer across chains.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/layerzero.jpg",
-      github: "https://github.com/moayaan1911/layerzero-example",
-      featured: true,
-      tags: ["LayerZero", "Cross-chain", "CLI"],
-    },
-    {
-      title: "ERC-404 Token dApp",
-      description:
-        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
-      github: "https://github.com/moayaan1911/erc404-uniswap",
-      link: "https://cat404.vercel.app",
-      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
-      featured: true,
-      tags: ["ERC-404", "Uniswap", "Testnet"],
-    },
-    {
       title: "Powered-v2",
       description: "AI Powered NFT Generation and GasLess Minting dApp",
       image:
@@ -185,16 +207,6 @@ export const details = {
       github: "https://github.com/moayaan1911/powered-v2",
       demo: "https://youtu.be/fzPOrj5_gI8?si=2JzYQ5aDyBjkKhzW",
       tags: ["AI", "NFT", "Gasless", "Web3"],
-    },
-    {
-      title: "LoomLess",
-      description:
-        "A lightweight, Minimalist Chrome extension for effortless screen recording with clean, intuitive interface",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/loomless.png",
-      link: "https://chromewebstore.google.com/detail/loomless/hpblkhdjmbiokmnemdmccpppjeoddecj",
-      featured: true,
-      tags: ["Chrome Extension", "Screen Recording", "Minimalist"],
     },
   ],
   experiences: [
