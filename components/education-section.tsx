@@ -166,7 +166,7 @@ export function EducationSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}>
-                <Card className="bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 backdrop-blur-sm">
+                <Card className="h-full bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 backdrop-blur-sm">
                   <CardContent className="p-6 text-center space-y-4">
                     <div className="relative mx-auto w-16 h-16">
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-teal-600 rounded-lg blur-sm opacity-50" />
