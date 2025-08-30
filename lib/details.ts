@@ -17,6 +17,7 @@ export const details = {
     { name: "Donate", link: "https://donate.unrwa.org/gaza/~my-donation" },
   ],
   skills: [
+    // Top 5 (as requested): Next.js, Solidity, Project Management, Context Engineering, Technical Leadership
     {
       name: "Next.js",
       image:
@@ -42,21 +43,22 @@ export const details = {
         "Strategic planning and execution of complex projects and team coordination.",
     },
     {
-      name: "Generative AI",
+      name: "Context Engineering",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai.jpeg",
-      url: "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+      url: "https://www.pinecone.io/learn/context-engineering/",
       description:
-        "AI technology for creating new content, code, and creative solutions.",
+        "Designing retrieval, prompts, and grounding data so LLMs have the right context for accurate, reliable outputs.",
     },
     {
-      name: "MERN Stack",
+      name: "Technical Leadership",
       image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/mern.webp",
-      url: "https://www.mongodb.com/mern-stack",
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
+      url: "https://maddevs.io/glossary/technical-leadership/",
       description:
-        "Full-stack JavaScript development with MongoDB, Express, React, and Node.js.",
+        "Leading engineering teams through architectural guidance, mentorship, and delivery focus while upholding technical quality.",
     },
+    // Remaining 5
     {
       name: "Hardhat",
       image:
@@ -73,7 +75,6 @@ export const details = {
       description:
         "Fast, portable Ethereum development toolkit written in Rust.",
     },
-
     {
       name: "JavaScript",
       image:
@@ -89,21 +90,6 @@ export const details = {
       url: "https://www.typescriptlang.org/",
       description:
         "Strongly typed JavaScript with enhanced tooling and error detection.",
-    },
-    {
-      name: "Git & GitHub",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/git.png",
-      url: "https://git-scm.com/",
-      description: "Version control and collaborative development platform.",
-    },
-    {
-      name: "Strategic Leadership",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
-      url: "https://en.wikipedia.org/wiki/Strategic_leadership",
-      description:
-        "Visionary leadership for long-term planning and organizational growth.",
     },
     {
       name: "Web3.js/Ethers.js",
@@ -167,7 +153,7 @@ export const details = {
       github: "https://github.com/moayaan1911/erc404-uniswap",
       link: "https://cat404.vercel.app",
       demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
-      featured: true,
+      featured: false,
       tags: ["ERC-404", "Uniswap", "Testnet"],
     },
     {
@@ -179,17 +165,7 @@ export const details = {
       link: "https://www.kronobits.com",
       tags: ["Next.js", "Aceternity UI", "Freelance"],
     },
-    {
-      title: "AI NFT Minter",
-      description:
-        "AI NFT generator and gasless minter built using HuggingFace and Next.js",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai_nft.png",
-      link: "https://powered-heroes.vercel.app/",
-      github: "https://github.com/moayaan1911/powered",
-      demo: "https://youtu.be/MZUSn3nxb3U?si=tnq54C-wUVA9jwL7",
-      tags: ["AI", "NFT", "HuggingFace", "Next.js"],
-    },
+
     {
       title: "Finstar Avenue",
       description: "Home page for Finstar Avenue, built as a freelancer.",
@@ -197,16 +173,6 @@ export const details = {
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/finstar.png",
       link: "https://finstaravenue.com/",
       tags: ["Freelance", "Landing Page"],
-    },
-    {
-      title: "Powered-v2",
-      description: "AI Powered NFT Generation and GasLess Minting dApp",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/powered.png",
-      link: "https://powered-v2.vercel.app/",
-      github: "https://github.com/moayaan1911/powered-v2",
-      demo: "https://youtu.be/fzPOrj5_gI8?si=2JzYQ5aDyBjkKhzW",
-      tags: ["AI", "NFT", "Gasless", "Web3"],
     },
   ],
   experiences: [
@@ -216,7 +182,7 @@ export const details = {
       timeline: "Aug 2024 - Present",
       link: "https://bima.money",
       image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/bima.jpg",
+        "https://gateway.lighthouse.storage/ipfs/bafkreibxnzv5cwodutpiarpvpn4cj65zbmfpwv2th27bpdw5d25vxdaayq",
       tags: ["Contract"],
       description:
         "Contributed to the development of a Bitcoin-based DeFi stablecoin ecosystem, implementing advanced features including yield aggregators, lending and borrowing protocols, and PSM modules",
@@ -275,7 +241,8 @@ export const details = {
       timeline: "2024 - 2025 (Ongoing)",
       universityLink: "https://www.unimarconi.it/",
       degreeLink: null,
-      pgDiplomaLink: "https://gateway.lighthouse.storage/ipfs/bafkreiaolsp5choxmlcmufdgn6qjipxjkae2lf5ye47ln74ihcncoxeu2e",
+      pgDiplomaLink:
+        "https://gateway.lighthouse.storage/ipfs/bafkreiaolsp5choxmlcmufdgn6qjipxjkae2lf5ye47ln74ihcncoxeu2e",
       mbaLink: null,
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/mba.jpeg",
@@ -300,8 +267,10 @@ export const details = {
       title: "Foundry Fundamentals",
       provider: "Cyfrin Updraft",
       date: "August 2025",
-      certificateLink: "https://profiles.cyfrin.io/u/moayaan1911/achievements/foundry",
-      image: "https://gateway.lighthouse.storage/ipfs/bafkreihqnitpcwkamlx2fczoilqvhg7nzgutomqybnlrh2s2le3sqzjudy",
+      certificateLink:
+        "https://gateway.lighthouse.storage/ipfs/bafkreihqnitpcwkamlx2fczoilqvhg7nzgutomqybnlrh2s2le3sqzjudy",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafkreig3auowxpyr23epgxfj7huplooazchwvl6yoc2pcatvgvvvfkg7ly",
     },
     {
       title: "Generative AI Foundations",

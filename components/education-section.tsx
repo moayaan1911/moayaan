@@ -157,7 +157,7 @@ export function EducationSection() {
             Professional Certifications
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {details.certifications.map((cert, index) => (
               <motion.div
                 key={cert.title}
@@ -166,8 +166,8 @@ export function EducationSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}>
-                <Card className="h-full bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 backdrop-blur-sm">
-                  <CardContent className="p-6 text-center space-y-4">
+                <Card className="h-full bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 backdrop-blur-sm aspect-square overflow-hidden">
+                  <CardContent className="p-4 text-center space-y-3 h-full flex flex-col justify-center">
                     <div className="relative mx-auto w-16 h-16">
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-teal-600 rounded-lg blur-sm opacity-50" />
                       <Image
@@ -179,15 +179,15 @@ export function EducationSection() {
                       />
                     </div>
 
-                    <h4 className="text-lg font-bold text-white">
+                    <h4 className="text-base font-bold text-white">
                       {cert.title}
                     </h4>
 
-                    <p className="text-cyan-400 font-semibold">
+                    <p className="text-cyan-400 font-medium text-sm">
                       {cert.provider}
                     </p>
 
-                    <p className="text-gray-400 text-sm">{cert.date}</p>
+                    <p className="text-gray-400 text-xs">{cert.date}</p>
 
                     <Button
                       size="sm"
