@@ -33,7 +33,7 @@ export function ProjectsSection() {
           </div>
         )}
 
-        <div className="relative overflow-hidden h-40">
+        <div className="relative overflow-hidden h-44">
           <Image
             src={project.image || "/placeholder.svg"}
             alt={project.title}
@@ -44,28 +44,28 @@ export function ProjectsSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         </div>
 
-        <CardHeader className="relative p-3">
-          <CardTitle className="text-lg font-bold text-white mb-1.5 group-hover:text-purple-400 transition-colors">
+        <CardHeader className="relative p-2">
+          <CardTitle className="text-base font-bold text-white mb-0.5 group-hover:text-purple-400 transition-colors">
             {project.title}
           </CardTitle>
-          <p className="text-gray-400 leading-snug text-[13px]">
+          <p className="text-gray-400 leading-snug text-[12px]">
             {project.description}
           </p>
         </CardHeader>
 
-        <CardContent className="space-y-3 p-3 pt-0 mt-auto">
-          <div className="flex flex-wrap gap-1.5">
+        <CardContent className="space-y-2 p-2 pt-0 mt-auto">
+          <div className="flex flex-wrap gap-1">
             {project.tags.map((tag: string) => (
               <Badge
                 key={tag}
                 variant="outline"
-                className="border-blue-400/50 text-blue-400 hover:bg-blue-400/20 transition-colors text-[11px] px-1.5 py-0.5">
+                className="border-blue-400/50 text-blue-400 hover:bg-blue-400/20 transition-colors text-[10px] px-1.5 py-0.5">
                 {tag}
               </Badge>
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-2 relative z-10">
+          <div className="flex flex-wrap gap-1.5 relative z-10">
             {project.link && (
               <Button
                 size="sm"
@@ -143,7 +143,7 @@ export function ProjectsSection() {
           <TabsContent
             value="featured"
             className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr items-stretch gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr items-stretch gap-5 lg:gap-6">
               {featuredProjects.map((project, index) => (
                 <ProjectCard
                   key={project.title}
@@ -157,7 +157,7 @@ export function ProjectsSection() {
           <TabsContent
             value="others"
             className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr items-stretch gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr items-stretch gap-5 lg:gap-6">
               {otherProjects.map((project, index) => (
                 <ProjectCard
                   key={project.title}

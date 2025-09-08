@@ -178,7 +178,7 @@ export const details = {
   experiences: [
     {
       company: "Digichain Global Holdings LLC",
-      designation: "Contract Blockchain Developer",
+      designation: "Blockchain Developer",
       timeline: "Aug 2024 - Present",
       link: "https://bima.money",
       image:
@@ -247,7 +247,7 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/mba.jpeg",
       description:
-        "Online MBA in Blockchain Management with Additional PG Diploma in Blockchain Management. Advanced strategic management education focusing on project management, technical leadership, international marketing, decision-making frameworks, and human resources management in the blockchain industry.",
+        "Online MBA in Blockchain Management with Additional PG Diploma in Blockchain Management. Focus on strategy, leadership, project management, and decision-making tailored to the blockchain industry.",
     },
     {
       degree: "B.Tech in Computer Science and Engineering",
@@ -259,16 +259,16 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ptu.png",
       description:
-        "Comprehensive foundation in foundational programming concepts, basic software engineering principles, database management, and modern programming paradigms with hands-on experience in full-stack development.",
+        "Core CS education covering programming, software engineering, databases, and modern development with practical full‑stack experience.",
     },
   ],
   certifications: [
     {
-      title: "Foundry Fundamentals",
+      title: "Blockchain Basics",
       provider: "Cyfrin Updraft",
-      date: "August 2025",
+      date: "September 2025",
       certificateLink:
-        "https://gateway.lighthouse.storage/ipfs/bafkreihqnitpcwkamlx2fczoilqvhg7nzgutomqybnlrh2s2le3sqzjudy",
+        "https://gateway.lighthouse.storage/ipfs/bafkreidxcpsbl3c2qb32tzkz2qx3hwwdplj46dg6n34kmkdsj4ejkggyvq",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafkreig3auowxpyr23epgxfj7huplooazchwvl6yoc2pcatvgvvvfkg7ly",
     },

@@ -44,7 +44,7 @@ export function EducationSection() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, rotateY: 5 }}>
               <Card className="h-full bg-gradient-to-br from-gray-900/80 to-gray-800/80 border-gray-700 hover:border-green-400/50 transition-all duration-500 backdrop-blur-sm">
-                <CardHeader className="text-center pb-4">
+                <CardHeader className="text-center pb-2">
                   <div className="relative mx-auto w-24 h-24 mb-4">
                     <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-600 rounded-full blur-lg opacity-50 animate-pulse" />
                     <Image
@@ -64,13 +64,13 @@ export function EducationSection() {
                     {edu.university}
                   </p>
 
-                  <div className="flex items-center justify-center text-gray-400 text-sm mt-2">
+                  <div className="flex items-center justify-center text-gray-400 text-sm mt-1">
                     <FaCalendarAlt className="mr-2" />
                     {edu.timeline}
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-4 pt-2">
                   <p className="text-gray-300 leading-relaxed text-center">
                     {edu.description}
                   </p>
@@ -126,7 +126,7 @@ export function EducationSection() {
                   </div>
 
                   {/* Animated graduation cap */}
-                  <div className="flex justify-center">
+                  <div className="flex justify-center mt-2">
                     <motion.div
                       animate={{
                         rotateZ: [0, 10, -10, 0],

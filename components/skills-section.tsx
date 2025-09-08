@@ -42,8 +42,8 @@ export function SkillsSection() {
               onHoverEnd={() => setHoveredSkill(null)}
               className="cursor-pointer">
               <Card className="h-full bg-gradient-to-br from-gray-900/50 to-gray-800/50 border-gray-700 hover:border-amber-400/50 transition-all duration-300 backdrop-blur-sm">
-                <CardContent className="p-4 text-center space-y-3">
-                  <div className="relative mx-auto w-12 h-12 mb-2">
+                <CardContent className="relative p-3 pb-1 text-center space-y-2 flex flex-col h-full">
+                  <div className="relative mx-auto w-20 h-20 mb-1.5">
                     <div
                       className={`absolute inset-0 bg-gradient-to-r from-amber-400 to-purple-600 rounded-lg transition-all duration-300 ${
                         hoveredSkill === index
@@ -54,13 +54,13 @@ export function SkillsSection() {
                     <Image
                       src={skill.image || "/placeholder.svg"}
                       alt={skill.name}
-                      width={48}
-                      height={48}
+                      width={80}
+                      height={80}
                       className="relative z-10 rounded-lg shadow-lg"
                     />
                   </div>
 
-                  <h3 className="text-base font-bold text-white mb-1.5">
+                  <h3 className="text-sm font-bold text-white mb-1">
                     {skill.name}
                   </h3>
 
@@ -71,10 +71,11 @@ export function SkillsSection() {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: hoveredSkill === index ? 1 : 0 }}
-                    transition={{ duration: 0.3 }}>
+                    transition={{ duration: 0.3 }}
+                    className="mt-2 self-center">
                     <Badge
                       variant="outline"
-                      className="mt-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black transition-colors cursor-pointer"
+                      className="border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black transition-colors cursor-pointer px-2 py-1 text-[10px]"
                       onClick={() => window.open(skill.url, "_blank")}>
                       Learn More
                     </Badge>
