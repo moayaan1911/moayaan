@@ -12,6 +12,7 @@ import {
   FaCertificate,
   FaUserGraduate,
 } from "react-icons/fa";
+import { PiCertificate } from "react-icons/pi";
 
 export function EducationSection() {
   return (
@@ -78,7 +79,7 @@ export function EducationSection() {
                   <div className="flex flex-col sm:flex-row gap-1 justify-center">
                     <Button
                       size="sm"
-                      className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white cursor-pointer"
+                      className="bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 text-white cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40"
                       onClick={() => window.open(edu.universityLink, "_blank")}>
                       <FaExternalLinkAlt className="mr-2 text-sm" />
                       Visit University
@@ -88,7 +89,7 @@ export function EducationSection() {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent cursor-pointer"
+                        className="border-fuchsia-400 text-fuchsia-200 bg-transparent cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40 hover:text-black hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500"
                         onClick={() => window.open(edu.degreeLink!, "_blank")}>
                         <FaUserGraduate className="mr-2 text-sm" />
                         View Degree
@@ -99,7 +100,7 @@ export function EducationSection() {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent cursor-pointer"
+                        className="border-fuchsia-400 text-fuchsia-200 bg-transparent cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40 hover:text-black hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500"
                         onClick={() =>
                           window.open((edu as any).pgDiplomaLink!, "_blank")
                         }>
@@ -166,15 +167,15 @@ export function EducationSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}>
-                <Card className="h-full bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 backdrop-blur-sm aspect-square overflow-hidden">
-                  <CardContent className="p-2 text-center space-y-2 h-full flex flex-col justify-center">
-                    <div className="relative mx-auto w-10 h-10">
+                <Card className="h-56 bg-gradient-to-br from-gray-900/60 to-gray-800/60 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 backdrop-blur-sm overflow-hidden">
+                  <CardContent className="p-2 text-center space-y-3 h-full flex flex-col justify-center">
+                    <div className="relative mx-auto w-14 h-14">
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-teal-600 rounded-lg blur-sm opacity-50" />
                       <Image
                         src={cert.image || "/placeholder.svg"}
                         alt={cert.provider}
-                        width={40}
-                        height={40}
+                        width={56}
+                        height={56}
                         className="relative z-10 rounded-lg shadow-lg"
                       />
                     </div>
@@ -189,16 +190,18 @@ export function EducationSection() {
 
                     <p className="text-gray-400 text-xs">{cert.date}</p>
 
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-cyan-400 text-cyan-400 hover:bg-cyan-400/20 bg-transparent cursor-pointer text-xs px-2 py-1 h-6"
-                      onClick={() =>
-                        window.open(cert.certificateLink, "_blank")
-                      }>
-                      <FaExternalLinkAlt className="mr-1.5 text-sm" />
-                      View Certificate
-                    </Button>
+                    <div className="flex justify-center">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="border-cyan-400 text-cyan-200 bg-transparent cursor-neon text-xs px-4 py-2 h-8 w-auto max-w-36 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/40 hover:text-black hover:bg-gradient-to-r hover:from-cyan-500 hover:to-teal-500"
+                        onClick={() =>
+                          window.open(cert.certificateLink, "_blank")
+                        }>
+                        <PiCertificate className="mr-1.5 text-sm" />
+                        View Certificate
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

@@ -311,6 +311,7 @@ export const details = {
       "https://media1.tenor.com/m/yTsLVmcpUGsAAAAC/stake-staking.gif",
   },
   footer: {
-    creditText: "Vibe Coded with Claude-Code and v0",
+    creditText: "vibe coded with various AI tools",
+    aiTools: "Claude-Code, Cursor and v0",
   },
 };

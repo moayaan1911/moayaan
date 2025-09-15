@@ -57,7 +57,7 @@ export function Navigation() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-gray-300 hover:text-white transition-colors duration-300 relative group cursor-pointer"
+                className="text-gray-300 hover:text-white transition-colors duration-300 relative group cursor-neon"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -74,7 +74,7 @@ export function Navigation() {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden text-white cursor-pointer"
+            className="md:hidden text-white cursor-neon"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </Button>
@@ -94,7 +94,7 @@ export function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors duration-300 cursor-pointer"
+                className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors duration-300 cursor-neon"
                 onClick={(e) => {
                   e.preventDefault();
                   document

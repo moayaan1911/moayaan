@@ -82,15 +82,15 @@ export function HeroSection() {
             <div className="flex flex-wrap justify-center gap-4">
               <Badge className="text-sm md:text-lg px-3 md:px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white border-amber-400">
                 <FaCode className="mr-2" />
-                Blockchain Developer
+                Full Stack Blockchain Developer
               </Badge>
               <Badge className="text-sm md:text-lg px-3 md:px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white border-purple-400">
                 <FaRocket className="mr-2" />
-                Crypto Investor
+                Crypto and DeFi Investor
               </Badge>
               <Badge className="text-sm md:text-lg px-3 md:px-4 py-2 bg-gradient-to-r from-blue-500 to-teal-500 text-white border-blue-400">
                 <FaGraduationCap className="mr-2" />
-                MBA Graduate
+                MBA in Blockchain Management
               </Badge>
             </div>
           </motion.div>

@@ -33,7 +33,7 @@ export function ProjectsSection() {
           </div>
         )}
 
-        <div className="relative overflow-hidden h-44">
+        <div className="relative overflow-hidden h-48">
           <Image
             src={project.image || "/placeholder.svg"}
             alt={project.title}
@@ -44,7 +44,7 @@ export function ProjectsSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         </div>
 
-        <CardHeader className="relative p-2">
+        <CardHeader className="relative p-1">
           <CardTitle className="text-base font-bold text-white mb-0.5 group-hover:text-purple-400 transition-colors">
             {project.title}
           </CardTitle>
@@ -53,7 +53,7 @@ export function ProjectsSection() {
           </p>
         </CardHeader>
 
-        <CardContent className="space-y-2 p-2 pt-0 mt-auto">
+        <CardContent className="space-y-3 p-1.5 pt-0 mt-auto">
           <div className="flex flex-wrap gap-1">
             {project.tags.map((tag: string) => (
               <Badge
@@ -69,7 +69,7 @@ export function ProjectsSection() {
             {project.link && (
               <Button
                 size="sm"
-                className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white relative z-20 cursor-pointer shadow"
+                className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white relative z-20 cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/40"
                 onClick={() => window.open(project.link, "_blank")}>
                 <FaExternalLinkAlt className="mr-2" />
                 Live Project
@@ -79,7 +79,7 @@ export function ProjectsSection() {
               <Button
                 size="sm"
                 variant="outline"
-                className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent relative z-20 cursor-pointer"
+                className="bg-black text-white border-gray-700 hover:bg-gray-900 relative z-20 cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-black/40"
                 onClick={() => window.open(project.github, "_blank")}>
                 <FaGithub className="mr-2" />
                 Code
@@ -89,7 +89,7 @@ export function ProjectsSection() {
               <Button
                 size="sm"
                 variant="outline"
-                className="border-amber-400 text-amber-400 hover:bg-amber-400/20 bg-transparent relative z-20 cursor-pointer"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white relative z-20 cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/40"
                 onClick={() => window.open(project.demo, "_blank")}>
                 <FaPlay className="mr-2" />
                 Demo
@@ -129,13 +129,13 @@ export function ProjectsSection() {
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 bg-gray-800/50 border border-gray-700">
             <TabsTrigger
               value="featured"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-blue-500 data-[state=active]:text-white cursor-pointer">
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-blue-500 data-[state=active]:text-white cursor-neon">
               <FaStar className="mr-2" />
               Featured ({featuredProjects.length})
             </TabsTrigger>
             <TabsTrigger
               value="others"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white cursor-pointer">
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white cursor-neon">
               Others ({otherProjects.length})
             </TabsTrigger>
           </TabsList>

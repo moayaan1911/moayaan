@@ -10,7 +10,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 relative">
+      className="py-12 relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -28,13 +28,13 @@ export function ContactSection() {
 
         <div className="max-w-4xl mx-auto">
           <Card className="bg-gradient-to-br from-gray-900/80 to-gray-800/80 border-gray-700 backdrop-blur-sm">
-            <CardContent className="p-8">
+            <CardContent className="p-4">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="flex flex-col md:flex-row gap-6 justify-center items-center mb-8">
+                className="flex flex-col md:flex-row gap-4 justify-center items-center mb-4">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50"
@@ -49,6 +49,13 @@ export function ContactSection() {
                   size="lg"
                   variant="outline"
                   className="border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 bg-transparent"
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLButtonElement).style.cursor =
+                      "url('/cursor-neon.svg') 6 4, pointer";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLButtonElement).style.cursor = "";
+                  }}
                   onClick={() => {
                     window.open("/AyaanResume.pdf", "_blank");
                   }}>
@@ -78,8 +85,8 @@ export function ContactSection() {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.6 }}
                   viewport={{ once: true }}
-                  className="pt-8 border-t border-gray-700">
-                  <p className="text-2xl text-center text-gray-300 mb-4">
+                  className="pt-4 border-t border-gray-700">
+                  <p className="text-2xl text-center text-gray-300 mb-2">
                     {details.connect.thankYouMessage}
                   </p>
 
