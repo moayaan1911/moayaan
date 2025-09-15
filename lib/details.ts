@@ -119,7 +119,7 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/layerzero.jpg",
       github: "https://github.com/moayaan1911/layerzero-example",
-      featured: true,
+      featured: false,
       tags: ["LayerZero", "Cross-chain", "CLI"],
     },
     {
@@ -129,6 +129,7 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/loomless.png",
       link: "https://chromewebstore.google.com/detail/loomless/hpblkhdjmbiokmnemdmccpppjeoddecj",
+      github: "https://github.com/moayaan1911/loomless",
       featured: true,
       tags: ["Chrome Extension", "Screen Recording", "Minimalist"],
     },
@@ -156,15 +157,15 @@ export const details = {
       featured: false,
       tags: ["ERC-404", "Uniswap", "Testnet"],
     },
-    {
-      title: "Kronobits",
-      description:
-        "Landing page for Kronobits built as a FREELANCER using Next.js and Aceternity UI",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/next.jpeg",
-      link: "https://www.kronobits.com",
-      tags: ["Next.js", "Aceternity UI", "Freelance"],
-    },
+    // {
+    //   title: "Kronobits",
+    //   description:
+    //     "Landing page for Kronobits built as a FREELANCER using Next.js and Aceternity UI",
+    //   image:
+    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/next.jpeg",
+    //   link: "https://www.kronobits.com",
+    //   tags: ["Next.js", "Aceternity UI", "Freelance"],
+    // },
 
     {
       title: "Finstar Avenue",

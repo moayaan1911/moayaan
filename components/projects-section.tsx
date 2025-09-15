@@ -48,7 +48,7 @@ export function ProjectsSection() {
           <CardTitle className="text-base font-bold text-white mb-0.5 group-hover:text-purple-400 transition-colors">
             {project.title}
           </CardTitle>
-          <p className="text-gray-400 leading-snug text-[12px]">
+          <p className="text-gray-400 leading-snug text-[13px] md:text-sm">
             {project.description}
           </p>
         </CardHeader>
@@ -143,7 +143,7 @@ export function ProjectsSection() {
           <TabsContent
             value="featured"
             className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr items-stretch gap-5 lg:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr items-stretch gap-5 lg:gap-6">
               {featuredProjects.map((project, index) => (
                 <ProjectCard
                   key={project.title}
@@ -157,7 +157,7 @@ export function ProjectsSection() {
           <TabsContent
             value="others"
             className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr items-stretch gap-5 lg:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr items-stretch gap-5 lg:gap-6">
               {otherProjects.map((project, index) => (
                 <ProjectCard
                   key={project.title}

@@ -33,7 +33,7 @@ export function ExperienceSection() {
           {/* Timeline line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-teal-400 via-blue-400 to-purple-400 rounded-full opacity-30" />
 
-          <div className="space-y-12">
+          <div className="space-y-6">
             {details.experiences.map((experience, index) => (
               <motion.div
                 key={experience.company}
@@ -44,45 +44,45 @@ export function ExperienceSection() {
                 className={`flex items-center ${
                   index % 2 === 0 ? "flex-row" : "flex-row-reverse"
                 }`}>
-                <div className={`w-1/2 ${index % 2 === 0 ? "pr-8" : "pl-8"}`}>
-                  <Card className="bg-gradient-to-br from-gray-900/80 to-gray-800/80 border-gray-700 hover:border-teal-400/50 transition-all duration-300 backdrop-blur-sm">
-                    <CardHeader className="flex flex-row items-center space-y-0 pb-4">
-                      <div className="relative w-16 h-16 mr-4 overflow-hidden">
+                <div className={`w-1/2 ${index % 2 === 0 ? "pr-4" : "pl-4"}`}>
+                  <Card className="bg-gradient-to-br from-gray-900/80 to-gray-800/80 border-gray-700 hover:border-teal-400/50 transition-all duration-300 backdrop-blur-sm pt-4 pb-4 px-2">
+                    <CardHeader className="flex flex-row items-center space-y-0 px-2 pt-0 pb-0">
+                      <div className="relative w-10 h-10 mr-2 overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-blue-600 rounded-lg blur-sm opacity-50" />
                         <Image
                           src={experience.image || "/placeholder.svg"}
                           alt={experience.company}
                           fill
-                          sizes="64px"
+                          sizes="40px"
                           className="relative z-10 rounded-lg shadow-lg object-cover"
                         />
                       </div>
                       <div className="flex-1">
-                        <CardTitle className="text-xl font-bold text-white mb-1">
+                        <CardTitle className="text-base font-bold text-white mb-0">
                           {experience.designation}
                         </CardTitle>
-                        <p className="text-teal-400 font-semibold">
+                        <p className="text-teal-400 font-semibold text-xs">
                           {experience.company}
                         </p>
                       </div>
                     </CardHeader>
 
-                    <CardContent className="space-y-4">
-                      <div className="flex items-center text-gray-400 text-sm">
-                        <FaCalendarAlt className="mr-2" />
+                    <CardContent className="px-2 pt-0 pb-0">
+                      <div className="flex items-center text-gray-400 text-xs mb-0.5">
+                        <FaCalendarAlt className="mr-1" />
                         {experience.timeline}
                       </div>
 
-                      <p className="text-gray-300 leading-relaxed">
+                      <p className="text-gray-300 leading-tight text-xs mb-0.5">
                         {experience.description}
                       </p>
 
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-0.5 mb-0.5">
                         {experience.tags.map((tag) => (
                           <Badge
                             key={tag}
                             variant="outline"
-                            className="border-teal-400/50 text-teal-400 hover:bg-teal-400/20 transition-colors">
+                            className="border-teal-400/50 text-teal-400 hover:bg-teal-400/20 transition-colors text-xs px-1 py-0">
                             {tag}
                           </Badge>
                         ))}
@@ -92,11 +92,11 @@ export function ExperienceSection() {
                         <Button
                           size="sm"
                           variant="outline"
-                          className="border-blue-400 text-blue-400 hover:bg-blue-400/20 bg-transparent cursor-pointer"
+                          className="border-blue-400 text-blue-400 hover:bg-blue-400/20 bg-transparent cursor-pointer text-xs px-4 py-2 h-8 mt-4"
                           onClick={() =>
                             window.open(experience.link!, "_blank")
                           }>
-                          <FaExternalLinkAlt className="mr-2" />
+                          <FaExternalLinkAlt className="mr-0.5" />
                           Visit Company
                         </Button>
                       )}
