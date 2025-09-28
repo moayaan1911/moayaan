@@ -4,7 +4,7 @@
   <img src="https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/profile.jpeg" alt="Mohammad Ayaan Siddiqui" width="200" />
 </p>
 
-Assalamualaikum guys! 🙌 This is Mohammad Ayaan Siddiqui (♦moayaan.eth♦). I’m a **Full Stack Blockchain Developer** and **MBA in Blockchain Management** with over **2 years of experience** rocking the Web3 world! 🚀 I’ve worn many hats:
+Assalamualaikum guys! 🙌 This is Mohammad Ayaan Siddiqui (♦moayaan.eth♦). I’m a **Full Stack Blockchain Developer** and **MBA in Blockchain Management** with **over 2 years of experience** rocking the Web3 world! 🚀 I’ve worn many hats:
 
 - Research Intern at a Hong Kong-based firm 🇭🇰
 - Technical Co-Founder at a Netherlands-based firm 🇳🇱

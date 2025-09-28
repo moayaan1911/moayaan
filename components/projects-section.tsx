@@ -33,7 +33,7 @@ export function ProjectsSection() {
           </div>
         )}
 
-        <div className="relative overflow-hidden h-48">
+        <div className="relative overflow-hidden h-64">
           <Image
             src={project.image || "/placeholder.svg"}
             alt={project.title}

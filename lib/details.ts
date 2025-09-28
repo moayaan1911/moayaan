@@ -102,6 +102,18 @@ export const details = {
   ],
   projects: [
     {
+      title: "Nano-NFT",
+      description:
+        "AI NFT Generator and Gasless Minter powered by Gemini Nano Banana and Thirdweb",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeigsmwdkp6bfp6ozlsja6wi7pnyswvusv7ubkdwpkiohokd5da52ii",
+      link: "https://nano-nft.vercel.app/",
+      github: "https://github.com/moayaan1911/nano-nft",
+      demo: "https://youtu.be/b_E5zEbYb98?si=f2qi4EmIj1cr8MW5",
+      featured: true,
+      tags: ["AI", "NFT", "Web3", "Gemini", "Thirdweb"],
+    },
+    {
       title: "QuickDapp",
       description:
         "An NPM Package that sets up your complete Web3 dApp starter template with smart contracts, gasless wallet connectivity, and AI assistant.",
@@ -109,7 +121,7 @@ export const details = {
         "https://gateway.lighthouse.storage/ipfs/bafkreie26hweqarznpjdddi7l2j5dfl7xjsaxvx2iccliuffgk6grvqu6e",
       link: "https://www.npmjs.com/package/quickdapp",
       github: "https://github.com/moayaan1911/quickdapp",
-      featured: true,
+      featured: false,
       tags: ["Web3", "Template", "Smart Contracts", "AI", "NPM Package"],
     },
     {
@@ -180,7 +192,7 @@ export const details = {
     {
       company: "Digichain Global Holdings LLC",
       designation: "Blockchain Developer",
-      timeline: "Aug 2024 - Present",
+      timeline: "July 2024 - October 2025",
       link: "https://bima.money",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafkreibxnzv5cwodutpiarpvpn4cj65zbmfpwv2th27bpdw5d25vxdaayq",
