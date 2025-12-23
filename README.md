@@ -11,7 +11,7 @@ Assalamualaikum guys! 🙌 This is Mohammad Ayaan Siddiqui (♦moayaan.eth♦). 
 - Full Stack Intern at a Singapore-based crypto hardware wallet firm 🇸🇬
 - Blockchain Developer at a US-based Bitcoin DeFi project 🇺🇸
 - PG Diploma in Blockchain Management from Cambridge International Qualifications (CIQ) 🇬🇧
-- Currently pursuing an online MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy 🇮🇹
+- MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy (Completed December 2025) 🇮🇹
 
 Let’s connect and build something epic! Find me at [moayaan.com](https://moayaan.com) 🌐
 

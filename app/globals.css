@@ -250,8 +250,3 @@ html {
     content: "...";
   }
 }
-
-/* Neon cursor utility */
-.cursor-neon {
-  cursor: url('/cursor-neon.svg') 6 4, pointer;
-}

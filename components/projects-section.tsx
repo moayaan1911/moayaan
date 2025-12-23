@@ -69,7 +69,7 @@ export function ProjectsSection() {
             {project.link && (
               <Button
                 size="sm"
-                className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white relative z-20 cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/40"
+                className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white relative z-20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/40"
                 onClick={() => window.open(project.link, "_blank")}>
                 <FaExternalLinkAlt className="mr-2" />
                 Live Project
@@ -79,7 +79,7 @@ export function ProjectsSection() {
               <Button
                 size="sm"
                 variant="outline"
-                className="bg-black text-white border-gray-700 hover:bg-gray-900 relative z-20 cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-black/40"
+                className="bg-black text-white border-gray-700 hover:bg-gray-900 relative z-20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-black/40"
                 onClick={() => window.open(project.github, "_blank")}>
                 <FaGithub className="mr-2" />
                 Code
@@ -89,7 +89,7 @@ export function ProjectsSection() {
               <Button
                 size="sm"
                 variant="outline"
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white relative z-20 cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/40"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white relative z-20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/40"
                 onClick={() => window.open(project.demo, "_blank")}>
                 <FaPlay className="mr-2" />
                 Demo
@@ -129,13 +129,13 @@ export function ProjectsSection() {
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 bg-gray-800/50 border border-gray-700">
             <TabsTrigger
               value="featured"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-blue-500 data-[state=active]:text-white cursor-neon">
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-blue-500 data-[state=active]:text-white">
               <FaStar className="mr-2" />
               Featured ({featuredProjects.length})
             </TabsTrigger>
             <TabsTrigger
               value="others"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white cursor-neon">
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white">
               Others ({otherProjects.length})
             </TabsTrigger>
           </TabsList>

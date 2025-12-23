@@ -40,7 +40,7 @@ export function SkillsSection() {
               whileHover={{ scale: 1.05, rotateY: 10 }}
               onHoverStart={() => setHoveredSkill(index)}
               onHoverEnd={() => setHoveredSkill(null)}
-              className="cursor-neon">
+              className="cursor-pointer">
               <Card className="h-full bg-gradient-to-br from-gray-900/50 to-gray-800/50 border-gray-700 hover:border-amber-400/50 transition-all duration-300 backdrop-blur-sm">
                 <CardContent className="relative p-3 pb-1 text-center space-y-2 flex flex-col h-full">
                   <div className="relative mx-auto w-20 h-20 mb-1.5">
@@ -75,7 +75,7 @@ export function SkillsSection() {
                     className="mt-2 self-center">
                     <Badge
                       variant="outline"
-                      className="border-amber-400 text-amber-400 cursor-neon px-2 py-1 text-[10px] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/40 hover:text-black hover:bg-gradient-to-r hover:from-amber-400 hover:to-yellow-500"
+                      className="border-amber-400 text-amber-400 cursor-pointer px-2 py-1 text-[10px] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/40 hover:text-black hover:bg-gradient-to-r hover:from-amber-400 hover:to-yellow-500"
                       onClick={() => window.open(skill.url, "_blank")}>
                       Learn More
                     </Badge>

@@ -251,7 +251,7 @@ export const details = {
     {
       degree: "MBA in Blockchain Management",
       university: "University of Studies Guglielmo Marconi, Italy",
-      timeline: "2024 - 2025 (Ongoing)",
+      timeline: "2024 - 2025",
       universityLink: "https://www.unimarconi.it/",
       degreeLink: null,
       pgDiplomaLink:

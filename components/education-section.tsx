@@ -79,7 +79,7 @@ export function EducationSection() {
                   <div className="flex flex-col sm:flex-row gap-1 justify-center">
                     <Button
                       size="sm"
-                      className="bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 text-white cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40"
+                      className="bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40"
                       onClick={() => window.open(edu.universityLink, "_blank")}>
                       <FaExternalLinkAlt className="mr-2 text-sm" />
                       Visit University
@@ -89,7 +89,7 @@ export function EducationSection() {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-fuchsia-400 text-fuchsia-200 bg-transparent cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40 hover:text-black hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500"
+                        className="border-fuchsia-400 text-fuchsia-200 bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40 hover:text-black hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500"
                         onClick={() => window.open(edu.degreeLink!, "_blank")}>
                         <FaUserGraduate className="mr-2 text-sm" />
                         View Degree
@@ -100,7 +100,7 @@ export function EducationSection() {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-fuchsia-400 text-fuchsia-200 bg-transparent cursor-neon transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40 hover:text-black hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500"
+                        className="border-fuchsia-400 text-fuchsia-200 bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-500/40 hover:text-black hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500"
                         onClick={() =>
                           window.open((edu as any).pgDiplomaLink!, "_blank")
                         }>
@@ -194,7 +194,7 @@ export function EducationSection() {
                       <Button
                         size="sm"
                         variant="outline"
-                        className="border-cyan-400 text-cyan-200 bg-transparent cursor-neon text-xs px-4 py-2 h-8 w-auto max-w-36 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/40 hover:text-black hover:bg-gradient-to-r hover:from-cyan-500 hover:to-teal-500"
+                        className="border-cyan-400 text-cyan-200 bg-transparent text-xs px-4 py-2 h-8 w-auto max-w-36 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/40 hover:text-black hover:bg-gradient-to-r hover:from-cyan-500 hover:to-teal-500"
                         onClick={() =>
                           window.open(cert.certificateLink, "_blank")
                         }>

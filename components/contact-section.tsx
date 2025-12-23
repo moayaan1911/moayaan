@@ -49,13 +49,6 @@ export function ContactSection() {
                   size="lg"
                   variant="outline"
                   className="border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 bg-transparent"
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.cursor =
-                      "url('/cursor-neon.svg') 6 4, pointer";
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLButtonElement).style.cursor = "";
-                  }}
                   onClick={() => {
                     window.open("/AyaanResume.pdf", "_blank");
                   }}>
