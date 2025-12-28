@@ -31,7 +31,7 @@ export function EducationSection() {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Continuous learning and academic achievements in blockchain
-            technology and computer science
+            technology
           </p>
         </motion.div>
 

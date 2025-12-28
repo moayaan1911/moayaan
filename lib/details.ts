@@ -6,98 +6,129 @@ export const details = {
   profile:
     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/profile.jpeg",
   socials: [
-    { name: "LinkedIn", link: "https://www.linkedin.com/in/ayaaneth" },
-    { name: "GitHub", link: "https://github.com/moayaan1911" },
-    { name: "Hashnode", link: "https://blog.moayaan.com" },
-    { name: "Upwork", link: "https://www.upwork.com/freelancers/mdayaans" },
-    { name: "Twitter", link: "https://x.com/moayaan1911" },
-    { name: "Peerlist", link: "https://peerlist.io/ayaaneth" },
-    { name: "BuyMeACoffee", link: "https://coff.ee/moayaan.eth" },
-    { name: "Telegram", link: "https://t.me/moayaan1911" },
-    { name: "Donate", link: "https://donate.unrwa.org/gaza/~my-donation" },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/ayaaneth",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/linkedin.png",
+    },
+    {
+      name: "GitHub",
+      link: "https://github.com/moayaan1911",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/github.png",
+    },
+    {
+      name: "Hashnode",
+      link: "https://blog.moayaan.com",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/hashnode.png",
+    },
+    {
+      name: "Upwork",
+      link: "https://www.upwork.com/freelancers/mdayaans",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/upwork.png",
+    },
+    {
+      name: "Twitter",
+      link: "https://x.com/moayaan1911",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/x.png",
+    },
+    {
+      name: "Peerlist",
+      link: "https://peerlist.io/ayaaneth",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/peerlist.png",
+    },
+    {
+      name: "ENS",
+      link: "https://app.ens.domains/moayaan.eth",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/ens.png",
+    },
+    {
+      name: "BuyMeACoffee",
+      link: "https://coff.ee/moayaan.eth",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/buymeacoffee.png",
+    },
+    {
+      name: "Telegram",
+      link: "https://t.me/moayaan1911",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/telegram.png",
+    },
+    {
+      name: "Donate",
+      link: "https://donate.unrwa.org/gaza/~my-donation",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/palestine.png",
+    },
   ],
   skills: [
-    // Top 5 (as requested): Next.js, Solidity, Project Management, Context Engineering, Technical Leadership
     {
       name: "Next.js",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/next.jpeg",
-      url: "https://nextjs.org/",
-      description:
-        "React framework for production-grade applications with SSR and static generation.",
     },
     {
       name: "Solidity",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/solidity.webp",
-      url: "https://soliditylang.org/",
-      description:
-        "Smart contract programming language for Ethereum blockchain development.",
     },
     {
       name: "Project Management",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/pm.jpg",
-      url: "https://en.wikipedia.org/wiki/Project_management",
-      description:
-        "Strategic planning and execution of complex projects and team coordination.",
     },
+
     {
-      name: "Context Engineering",
+      name: "Vibe Coding/AI Tools",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai.jpeg",
-      url: "https://www.pinecone.io/learn/context-engineering/",
-      description:
-        "Designing retrieval, prompts, and grounding data so LLMs have the right context for accurate, reliable outputs.",
     },
-    {
-      name: "Technical Leadership",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
-      url: "https://maddevs.io/glossary/technical-leadership/",
-      description:
-        "Leading engineering teams through architectural guidance, mentorship, and delivery focus while upholding technical quality.",
-    },
-    // Remaining 5
+
     {
       name: "Hardhat",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/hardhat.png",
-      url: "https://hardhat.org/",
-      description:
-        "Ethereum development environment for smart contract development and testing.",
     },
     {
       name: "Foundry",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/foundry.png",
-      url: "https://book.getfoundry.sh/",
-      description:
-        "Fast, portable Ethereum development toolkit written in Rust.",
+    },
+    {
+      name: "Technical Leadership",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
+    },
+    {
+      name: "Rust",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafkreia2ypwbjrsrmusfqn6iygonjqqjmv2fg2m5u75dz2kzdqj5oicrau",
+    },
+    {
+      name: "Solana",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafkreihfoippppifivpnf6cc5ixwn7lxcw2wz2rrtwazdb4qpa4dabqyvq",
     },
     {
       name: "JavaScript",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/JavaScript.png",
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      description:
-        "Dynamic programming language for interactive web development.",
     },
     {
       name: "TypeScript",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/Typescript.png",
-      url: "https://www.typescriptlang.org/",
-      description:
-        "Strongly typed JavaScript with enhanced tooling and error detection.",
     },
     {
       name: "Web3.js/Ethers.js",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ethersjs.png",
-      url: "https://ethers.org/",
-      description:
-        "JavaScript libraries for Ethereum blockchain and dApp development.",
     },
   ],
   projects: [
@@ -110,7 +141,7 @@ export const details = {
       link: "https://nano-nft.vercel.app/",
       github: "https://github.com/moayaan1911/nano-nft",
       demo: "https://youtu.be/b_E5zEbYb98?si=f2qi4EmIj1cr8MW5",
-      featured: true,
+      featured: false,
       tags: ["AI", "NFT", "Web3", "Gemini", "Thirdweb"],
     },
     {
@@ -131,7 +162,7 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/layerzero.jpg",
       github: "https://github.com/moayaan1911/layerzero-example",
-      featured: false,
+      featured: true,
       tags: ["LayerZero", "Cross-chain", "CLI"],
     },
     {
@@ -251,7 +282,7 @@ export const details = {
     {
       degree: "MBA in Blockchain Management",
       university: "University of Studies Guglielmo Marconi, Italy",
-      timeline: "2024 - 2025",
+      timeline: "October 2024 - December 2025",
       universityLink: "https://www.unimarconi.it/",
       degreeLink: null,
       pgDiplomaLink:
@@ -260,12 +291,12 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/mba.jpeg",
       description:
-        "Online MBA in Blockchain Management with Additional PG Diploma in Blockchain Management. Focus on strategy, leadership, project management, and decision-making tailored to the blockchain industry.",
+        "MBA in Blockchain Management focused on strategy, leadership, project management, decision-making, and marketing tailored to the blockchain industry.",
     },
     {
       degree: "B.Tech in Computer Science and Engineering",
-      university: "I. K. Gujral Punjab Technical University",
-      timeline: "2020 - 2024",
+      university: "I. K. Gujral Punjab Technical University, India",
+      timeline: "February 2020 - July 2024",
       universityLink: "https://ptu.ac.in/",
       degreeLink:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/PTUDegree.pdf",

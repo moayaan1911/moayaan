@@ -25,7 +25,7 @@ export function ExperienceSection() {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Building the future of blockchain technology across innovative
-            companies and startups
+            startups
           </p>
         </motion.div>
 
@@ -77,7 +77,7 @@ export function ExperienceSection() {
                         {experience.description}
                       </p>
 
-                      <div className="flex flex-wrap gap-0.5 mb-0.5">
+                      <div className="flex flex-wrap gap-0.5 mb-0.5 mt-2">
                         {experience.tags.map((tag) => (
                           <Badge
                             key={tag}

@@ -3,36 +3,27 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  FaRocket,
-  FaCode,
-  FaGraduationCap,
-  FaLinkedin,
-  FaGithub,
-  FaTelegram,
-  FaEnvelope,
-  FaCoffee,
-  FaUsers,
-} from "react-icons/fa";
-import { SiHashnode, SiUpwork } from "react-icons/si";
-import { RiTwitterXFill } from "react-icons/ri";
+import { FaRocket, FaCode, FaGraduationCap } from "react-icons/fa";
 import { details } from "@/lib/details";
 import Image from "next/image";
 
-const socialIcons = {
-  LinkedIn: FaLinkedin,
-  GitHub: FaGithub,
-  Hashnode: SiHashnode,
-  Upwork: SiUpwork,
-  Twitter: RiTwitterXFill,
-  Peerlist: FaUsers,
-  BuyMeACoffee: FaCoffee,
-  Telegram: FaTelegram,
-  Email: FaEnvelope,
-  Donate: () => <span className="text-xl">🇵🇸</span>,
-};
-
 export function HeroSection() {
+  const getBorderColor = (name: string) => {
+    const borderColors: { [key: string]: string } = {
+      LinkedIn: "border-[#0A66C2]",
+      GitHub: "border-white",
+      Hashnode: "border-[#2962FF]",
+      Upwork: "border-white",
+      Twitter: "border-white",
+      Peerlist: "border-[#00AA45]",
+      ENS: "border-[#5298FF]",
+      BuyMeACoffee: "border-[#FFDD00]",
+      Telegram: "border-[#0088CC]",
+      Donate: "border-[#00A650]", // Palestine green
+    };
+    return borderColors[name] || "border-white";
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-transparent pt-20 relative">
       <div className="container mx-auto px-4">
@@ -100,32 +91,33 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-wrap justify-center gap-4 max-w-md mx-auto">
-            {details.socials.map((social, index) => {
-              const IconComponent =
-                socialIcons[social.name as keyof typeof socialIcons];
-
-              return (
-                <motion.div
-                  key={social.name}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                  whileHover={{
-                    scale: 1.15,
-                    rotateY: 10,
-                    boxShadow: "0 0 25px rgba(168, 85, 247, 0.6)",
-                  }}
-                  whileTap={{ scale: 0.9 }}>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="w-12 h-12 border-gray-600 hover:border-purple-400 hover:bg-gradient-to-r hover:from-purple-500/30 hover:to-blue-500/30 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-500 bg-transparent backdrop-blur-sm"
-                    onClick={() => window.open(social.link, "_blank")}>
-                    <IconComponent className="text-xl hover:text-white transition-colors duration-300" />
-                  </Button>
-                </motion.div>
-              );
-            })}
+            {details.socials.map((social, index) => (
+              <motion.div
+                key={social.name}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                whileHover={{
+                  scale: 1.15,
+                  rotateY: 10,
+                  boxShadow: "0 0 25px rgba(168, 85, 247, 0.6)",
+                }}
+                whileTap={{ scale: 0.9 }}>
+                <button
+                  className={`w-14 h-14 border ${getBorderColor(
+                    social.name
+                  )} hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-500 rounded-md p-2 bg-transparent cursor-pointer`}
+                  onClick={() => window.open(social.link, "_blank")}>
+                  <Image
+                    src={social.image}
+                    alt={social.name}
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-contain"
+                  />
+                </button>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </div>

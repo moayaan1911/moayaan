@@ -16,7 +16,6 @@ export function ProjectsSection() {
 
   const ProjectCard = ({ project, index }: { project: any; index: number }) => (
     <motion.div
-      key={project.title}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -143,13 +142,16 @@ export function ProjectsSection() {
           <TabsContent
             value="featured"
             className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr items-stretch gap-5 lg:gap-6">
+            <div className="flex flex-wrap justify-center items-stretch gap-5 lg:gap-6 max-w-7xl mx-auto">
               {featuredProjects.map((project, index) => (
-                <ProjectCard
+                <div
                   key={project.title}
-                  project={project}
-                  index={index}
-                />
+                  className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md">
+                  <ProjectCard
+                    project={project}
+                    index={index}
+                  />
+                </div>
               ))}
             </div>
           </TabsContent>
@@ -157,13 +159,16 @@ export function ProjectsSection() {
           <TabsContent
             value="others"
             className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr items-stretch gap-5 lg:gap-6">
+            <div className="flex flex-wrap justify-center items-stretch gap-5 lg:gap-6 max-w-7xl mx-auto">
               {otherProjects.map((project, index) => (
-                <ProjectCard
+                <div
                   key={project.title}
-                  project={project}
-                  index={index}
-                />
+                  className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md">
+                  <ProjectCard
+                    project={project}
+                    index={index}
+                  />
+                </div>
               ))}
             </div>
           </TabsContent>
