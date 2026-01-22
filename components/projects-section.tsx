@@ -1,174 +1,158 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { details } from "@/lib/details";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt, FaPlay, FaStar } from "react-icons/fa";
+import { useState } from "react";
+
 export function ProjectsSection() {
-  const featuredProjects = details.projects.filter(
-    (project) => project.featured
-  );
+  const [activeTab, setActiveTab] = useState<"featured" | "others">("featured");
+  const featuredProjects = details.projects.filter((project) => project.featured);
   const otherProjects = details.projects.filter((project) => !project.featured);
-
-  const ProjectCard = ({ project, index }: { project: any; index: number }) => (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      viewport={{ once: true }}
-      whileHover={{ scale: 1.02, rotateX: 2 }}
-      className="group h-full">
-      <Card className="h-full flex flex-col bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-gray-700 hover:border-purple-400/50 transition-all duration-500 backdrop-blur-sm overflow-hidden relative">
-        {project.featured && (
-          <div className="absolute top-4 right-4 z-20">
-            <Badge className="bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg">
-              <FaStar className="mr-1" />
-              Featured
-            </Badge>
-          </div>
-        )}
-
-        <div className="relative overflow-hidden h-64">
-          <Image
-            src={project.image || "/placeholder.svg"}
-            alt={project.title}
-            width={600}
-            height={300}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-        </div>
-
-        <CardHeader className="relative p-1">
-          <CardTitle className="text-base font-bold text-white mb-0.5 group-hover:text-purple-400 transition-colors">
-            {project.title}
-          </CardTitle>
-          <p className="text-gray-400 leading-snug text-[13px] md:text-sm">
-            {project.description}
-          </p>
-        </CardHeader>
-
-        <CardContent className="space-y-3 p-1.5 pt-0 mt-auto">
-          <div className="flex flex-wrap gap-1">
-            {project.tags.map((tag: string) => (
-              <Badge
-                key={tag}
-                variant="outline"
-                className="border-blue-400/50 text-blue-400 hover:bg-blue-400/20 transition-colors text-[10px] px-1.5 py-0.5">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap gap-1.5 relative z-10">
-            {project.link && (
-              <Button
-                size="sm"
-                className="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white relative z-20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/40"
-                onClick={() => window.open(project.link, "_blank")}>
-                <FaExternalLinkAlt className="mr-2" />
-                Live Project
-              </Button>
-            )}
-            {project.github && (
-              <Button
-                size="sm"
-                variant="outline"
-                className="bg-black text-white border-gray-700 hover:bg-gray-900 relative z-20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-black/40"
-                onClick={() => window.open(project.github, "_blank")}>
-                <FaGithub className="mr-2" />
-                Code
-              </Button>
-            )}
-            {project.demo && (
-              <Button
-                size="sm"
-                variant="outline"
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white relative z-20 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/40"
-                onClick={() => window.open(project.demo, "_blank")}>
-                <FaPlay className="mr-2" />
-                Demo
-              </Button>
-            )}
-          </div>
-        </CardContent>
-
-        <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-purple-400/20 via-blue-400/20 to-teal-400/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-      </Card>
-    </motion.div>
-  );
+  const activeProjects = activeTab === "featured" ? featuredProjects : otherProjects;
 
   return (
-    <section
-      id="projects"
-      className="py-20 relative z-10">
+    <section id="projects" className="py-20 relative z-10">
       <div className="container mx-auto px-4">
+        {/* Section Title */}
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-400 bg-clip-text text-transparent mb-6 leading-tight py-2">
+          className="text-center mb-12"
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-400 bg-clip-text text-transparent mb-8">
             Projects
           </h2>
+
+          {/* Toggle Pills */}
+          <div className="inline-flex p-1.5 bg-gray-900/80 backdrop-blur-sm rounded-full border border-gray-700">
+            <button
+              onClick={() => setActiveTab("featured")}
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                activeTab === "featured"
+                  ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-orange-500/30"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              <FaStar className={activeTab === "featured" ? "text-white" : "text-amber-400"} />
+              Featured
+            </button>
+            <button
+              onClick={() => setActiveTab("others")}
+              className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                activeTab === "others"
+                  ? "bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg shadow-purple-500/30"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              Others
+            </button>
+          </div>
         </motion.div>
 
-        <Tabs
-          defaultValue="featured"
-          className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 bg-gray-800/50 border border-gray-700">
-            <TabsTrigger
-              value="featured"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-blue-500 data-[state=active]:text-white">
-              <FaStar className="mr-2" />
-              Featured ({featuredProjects.length})
-            </TabsTrigger>
-            <TabsTrigger
-              value="others"
-              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-orange-500 data-[state=active]:text-white">
-              Others ({otherProjects.length})
-            </TabsTrigger>
-          </TabsList>
+        {/* Bento Grid */}
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto"
+        >
+          {activeProjects.map((project, index) => {
+            // First item in featured gets special large treatment
+            const isLarge = activeTab === "featured" && index === 0;
 
-          <TabsContent
-            value="featured"
-            className="space-y-8">
-            <div className="flex flex-wrap justify-center items-stretch gap-5 lg:gap-6 max-w-7xl mx-auto">
-              {featuredProjects.map((project, index) => (
+            return (
+              <motion.div
+                key={project.title}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
+                viewport={{ once: true }}
+                className={`group ${isLarge ? "md:col-span-2 md:row-span-2" : ""}`}
+              >
                 <div
-                  key={project.title}
-                  className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md">
-                  <ProjectCard
-                    project={project}
-                    index={index}
+                  className={`relative overflow-hidden rounded-3xl border border-gray-800 hover:border-purple-500/50 transition-all duration-500 ${
+                    isLarge ? "h-[500px]" : "h-[280px]"
+                  }`}
+                >
+                  {/* Background Image */}
+                  <Image
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                </div>
-              ))}
-            </div>
-          </TabsContent>
 
-          <TabsContent
-            value="others"
-            className="space-y-8">
-            <div className="flex flex-wrap justify-center items-stretch gap-5 lg:gap-6 max-w-7xl mx-auto">
-              {otherProjects.map((project, index) => (
-                <div
-                  key={project.title}
-                  className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md">
-                  <ProjectCard
-                    project={project}
-                    index={index}
-                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20 group-hover:via-black/70 transition-all duration-300" />
+
+                  {/* Content */}
+                  <div className="absolute inset-0 p-6 flex flex-col justify-between">
+                    {/* Top - Featured Badge */}
+                    {project.featured && (
+                      <div className="self-end">
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500/90 backdrop-blur-sm rounded-full text-xs font-medium text-white">
+                          <FaStar className="text-[10px]" />
+                          Featured
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Bottom - Info */}
+                    <div className="space-y-3">
+                      <h3 className={`font-bold text-white group-hover:text-purple-300 transition-colors ${
+                        isLarge ? "text-3xl" : "text-xl"
+                      }`}>
+                        {project.title}
+                      </h3>
+
+                      <p className={`text-gray-300 ${isLarge ? "text-base line-clamp-3" : "text-sm line-clamp-2"}`}>
+                        {project.description}
+                      </p>
+
+                      {/* Action Buttons */}
+                      <div className="flex gap-2 pt-2">
+                        {project.link && (
+                          <button
+                            onClick={() => window.open(project.link, "_blank")}
+                            className="p-2.5 bg-white/10 backdrop-blur-sm rounded-xl text-white hover:bg-white/20 transition-all border border-white/10 hover:border-white/30 hover:scale-110"
+                          >
+                            <FaExternalLinkAlt className="text-sm" />
+                          </button>
+                        )}
+                        {project.github && (
+                          <button
+                            onClick={() => window.open(project.github, "_blank")}
+                            className="p-2.5 bg-white/10 backdrop-blur-sm rounded-xl text-white hover:bg-white/20 transition-all border border-white/10 hover:border-white/30 hover:scale-110"
+                          >
+                            <FaGithub className="text-sm" />
+                          </button>
+                        )}
+                        {project.demo && (
+                          <button
+                            onClick={() => window.open(project.demo, "_blank")}
+                            className="p-2.5 bg-red-500/80 backdrop-blur-sm rounded-xl text-white hover:bg-red-500 transition-all hover:scale-110"
+                          >
+                            <FaPlay className="text-sm" />
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Hover Glow Effect */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-transparent" />
+                  </div>
                 </div>
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+              </motion.div>
+            );
+          })}
+        </motion.div>
       </div>
     </section>
   );

@@ -84,6 +84,11 @@ export const details = {
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/pm.jpg",
     },
     {
+      name: "Technical Leadership",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
+    },
+    {
       name: "Claude Code / AI Tools",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafkreigcalwjsh4c7zj66wzck7lu4cae2ts5ri2fjngp4hkeagnhtqml6q",
@@ -99,11 +104,6 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/foundry.png",
     },
-    // {
-    //   name: "Technical Leadership",
-    //   image:
-    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
-    // },
     // {
     //   name: "Rust",
     //   image:
