@@ -1,8 +1,8 @@
 export const details = {
   salam: "👋 ٱلسَّلَامُ عَلَيْكُمْ",
   tagline: "♦moayaan.eth♦",
-  description:
-    "Hello everyone, I am Mohammad Ayaan Siddiqui, a self-taught Full Stack Blockchain Developer, Crypto Investor and MBA graduate.",
+  // description:
+  // "Hello everyone, I am Mohammad Ayaan Siddiqui, a self-taught Full Stack Blockchain Developer, Crypto Investor and MBA graduate.",
   profile:
     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/profile.jpeg",
   socials: [
@@ -83,33 +83,32 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/pm.jpg",
     },
-
     {
-      name: "Vibe Coding/AI Tools",
+      name: "Claude Code / AI Tools",
       image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai.jpeg",
+        "https://gateway.lighthouse.storage/ipfs/bafkreigcalwjsh4c7zj66wzck7lu4cae2ts5ri2fjngp4hkeagnhtqml6q",
     },
 
     {
-      name: "Hardhat",
+      name: "Prompt Engineering",
       image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/hardhat.png",
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai.jpeg",
     },
     {
       name: "Foundry",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/foundry.png",
     },
-    {
-      name: "Technical Leadership",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
-    },
-    {
-      name: "Rust",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafkreia2ypwbjrsrmusfqn6iygonjqqjmv2fg2m5u75dz2kzdqj5oicrau",
-    },
+    // {
+    //   name: "Technical Leadership",
+    //   image:
+    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
+    // },
+    // {
+    //   name: "Rust",
+    //   image:
+    //     "https://gateway.lighthouse.storage/ipfs/bafkreia2ypwbjrsrmusfqn6iygonjqqjmv2fg2m5u75dz2kzdqj5oicrau",
+    // },
     {
       name: "Solana",
       image:
@@ -120,15 +119,20 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/JavaScript.png",
     },
-    {
-      name: "TypeScript",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/Typescript.png",
-    },
+    // {
+    //   name: "TypeScript",
+    //   image:
+    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/Typescript.png",
+    // },
     {
       name: "Web3.js/Ethers.js",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ethersjs.png",
+    },
+    {
+      name: "Hardhat",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/hardhat.png",
     },
   ],
   projects: [
@@ -232,31 +236,31 @@ export const details = {
         "Contributed to the development of a Bitcoin-based DeFi stablecoin ecosystem, implementing advanced features including yield aggregators, lending and borrowing protocols, and PSM modules",
       certificateLink: null,
     },
-    {
-      company: "Cypherock",
-      designation: "Full Stack Web3 Developer Intern",
-      timeline: "Apr 2024 - Jul 2024",
-      link: "https://www.cypherock.com/",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/cypherock.png",
-      tags: ["Intern"],
-      description:
-        "Developed and enhanced software solutions for hardware cryptocurrency wallets, focusing on user experience optimization and bug resolution",
-    },
-    {
-      company: "Finstar Avenue",
-      designation: "Tech Advisor and Freelance Developer",
-      timeline: "Feb 2024 - Jul 2024",
-      link: "https://finstaravenue.com/",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/finstar.webp",
-      tags: ["Freelance"],
-      description:
-        "Developed their primary website and provided technical consulting to help launch innovative solutions for their clients",
-    },
+    // {
+    //   company: "Cypherock",
+    //   designation: "Full Stack Web3 Developer Intern",
+    //   timeline: "Apr 2024 - Jul 2024",
+    //   link: "https://www.cypherock.com/",
+    //   image:
+    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/cypherock.png",
+    //   tags: ["Intern"],
+    //   description:
+    //     "Developed and enhanced software solutions for hardware cryptocurrency wallets, focusing on user experience optimization and bug resolution",
+    // },
+    // {
+    //   company: "Finstar Avenue",
+    //   designation: "Tech Advisor and Freelance Developer",
+    //   timeline: "Feb 2024 - Jul 2024",
+    //   link: "https://finstaravenue.com/",
+    //   image:
+    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/finstar.webp",
+    //   tags: ["Freelance"],
+    //   description:
+    //     "Developed their primary website and provided technical consulting to help launch innovative solutions for their clients",
+    // },
     {
       company: "D Frame Foundation",
-      designation: "Technical Co-Founder",
+      designation: "Founding Engineer",
       timeline: "Dec 2022 - Mar 2024",
       link: "https://dframe.org/",
       image:
@@ -345,16 +349,11 @@ export const details = {
     },
   ],
   connect: {
-    description:
-      "🚀 I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision.\n\n💬 Feel free to reach out!",
-    email: "moayaan.eth@gmail.com",
-    location: "India",
     thankYouMessage: "🙏 Thanks for exploring my work! ✨",
     celebrationGif:
       "https://media1.tenor.com/m/yTsLVmcpUGsAAAAC/stake-staking.gif",
   },
   footer: {
-    creditText: "vibe coded with various AI tools",
-    aiTools: "Claude-Code, Cursor and v0",
+    creditText: "vibe coded with claude-code",
   },
 };

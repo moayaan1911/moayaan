@@ -15,13 +15,10 @@ export function SkillsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16">
+          className="text-center mb-10">
           <h2 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-amber-400 via-purple-400 to-blue-400 bg-clip-text text-transparent mb-6">
             My Skills
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Engineering to technical leadership across the web3 stack.
-          </p>
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 max-w-5xl mx-auto">
@@ -33,7 +30,7 @@ export function SkillsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="flex flex-col items-center justify-center w-32">
-              <div className="relative w-24 h-24 mb-2 flex items-center justify-center">
+              <div className="relative w-24 h-24 mb-2 flex items-center justify-center bg-white/5 backdrop-blur-md rounded-xl border border-white/10 p-3">
                 <Image
                   src={skill.image || "/placeholder.svg"}
                   alt={skill.name}

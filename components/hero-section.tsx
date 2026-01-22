@@ -2,12 +2,25 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { FaRocket, FaCode, FaGraduationCap } from "react-icons/fa";
+import {
+  FaRocket,
+  FaCode,
+  FaGraduationCap,
+  FaCalendarAlt,
+} from "react-icons/fa";
 import { details } from "@/lib/details";
 import Image from "next/image";
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
 export function HeroSection() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "meet" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
+  }, []);
+
   const getBorderColor = (name: string) => {
     const borderColors: { [key: string]: string } = {
       LinkedIn: "border-[#0A66C2]",
@@ -65,24 +78,47 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="max-w-4xl mx-auto space-y-6">
-            <p className="text-lg md:text-xl lg:text-2xl text-white leading-relaxed">
-              {details.description}
-            </p>
-
             {/* Badges */}
             <div className="flex flex-wrap justify-center gap-4">
-              <Badge className="text-sm md:text-lg px-3 md:px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white border-amber-400">
-                <FaCode className="mr-2" />
-                Full Stack Blockchain Developer
-              </Badge>
-              <Badge className="text-sm md:text-lg px-3 md:px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white border-purple-400">
-                <FaRocket className="mr-2" />
-                Crypto and DeFi Investor
-              </Badge>
-              <Badge className="text-sm md:text-lg px-3 md:px-4 py-2 bg-gradient-to-r from-blue-500 to-teal-500 text-white border-blue-400">
-                <FaGraduationCap className="mr-2" />
-                MBA in Blockchain Management
-              </Badge>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="group relative p-[3px] rounded-full overflow-hidden">
+                <div className="absolute inset-0 bg-[conic-gradient(from_0deg,#f59e0b_0deg,#fbbf24_90deg,transparent_180deg,transparent_360deg)] animate-spin [animation-duration:2s]" />
+                <div className="relative flex items-center gap-2 px-4 md:px-6 py-2.5 bg-gray-950 text-amber-300 rounded-full text-sm md:text-lg font-medium">
+                  <motion.span
+                    animate={{ rotate: [0, 10, -10, 0] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
+                    <FaCode className="text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,1)]" />
+                  </motion.span>
+                  Full Stack Blockchain Developer
+                </div>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="group relative p-[3px] rounded-full overflow-hidden">
+                <div className="absolute inset-0 bg-[conic-gradient(from_0deg,#a855f7_0deg,#c084fc_90deg,transparent_180deg,transparent_360deg)] animate-spin [animation-duration:2s]" />
+                <div className="relative flex items-center gap-2 px-4 md:px-6 py-2.5 bg-gray-950 text-purple-300 rounded-full text-sm md:text-lg font-medium">
+                  <motion.span
+                    animate={{ y: [0, -3, 0], rotate: [0, 15, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}>
+                    <FaRocket className="text-purple-400 drop-shadow-[0_0_10px_rgba(168,85,247,1)]" />
+                  </motion.span>
+                  Crypto and DeFi Investor
+                </div>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="group relative p-[3px] rounded-full overflow-hidden">
+                <div className="absolute inset-0 bg-[conic-gradient(from_0deg,#06b6d4_0deg,#22d3ee_90deg,transparent_180deg,transparent_360deg)] animate-spin [animation-duration:2s]" />
+                <div className="relative flex items-center gap-2 px-4 md:px-6 py-2.5 bg-gray-950 text-cyan-300 rounded-full text-sm md:text-lg font-medium">
+                  <motion.span
+                    animate={{ scale: [1, 1.2, 1], rotate: [0, -5, 5, 0] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
+                    <FaGraduationCap className="text-cyan-400 drop-shadow-[0_0_10px_rgba(34,211,238,1)]" />
+                  </motion.span>
+                  MBA in Blockchain Management
+                </div>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -90,34 +126,55 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-wrap justify-center gap-4 max-w-md mx-auto">
+            className="flex justify-center gap-4 max-w-3xl mx-auto">
             {details.socials.map((social, index) => (
               <motion.div
                 key={social.name}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                transition={{ duration: 0.5, delay: 0.6 + index * 0.05 }}
                 whileHover={{
                   scale: 1.15,
-                  rotateY: 10,
-                  boxShadow: "0 0 25px rgba(168, 85, 247, 0.6)",
+                  boxShadow: "0 0 20px rgba(168, 85, 247, 0.5)",
                 }}
                 whileTap={{ scale: 0.9 }}>
                 <button
-                  className={`w-14 h-14 border ${getBorderColor(
-                    social.name
-                  )} hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-500 rounded-md p-2 bg-transparent cursor-pointer`}
+                  className={`w-12 h-12 border-2 ${getBorderColor(
+                    social.name,
+                  )} hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-500 rounded-full p-2.5 bg-transparent cursor-pointer`}
                   onClick={() => window.open(social.link, "_blank")}>
                   <Image
                     src={social.image}
                     alt={social.name}
-                    width={40}
-                    height={40}
+                    width={32}
+                    height={32}
                     className="w-full h-full object-contain"
                   />
                 </button>
               </motion.div>
             ))}
+          </motion.div>
+
+          {/* CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex justify-center">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-12 py-7 text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex flex-col items-center gap-1.5"
+              data-cal-namespace="meet"
+              data-cal-link="moayaan1911/meet"
+              data-cal-config='{"layout":"month_view"}'>
+              <span className="flex items-center text-2xl">
+                <FaCalendarAlt className="mr-3 text-2xl" />
+                Get in Touch
+              </span>
+              <span className="text-sm font-normal text-purple-200">
+                Freelancing | Consulting | Job Offer | Crypto & DeFi Guide
+              </span>
+            </Button>
           </motion.div>
         </div>
       </div>

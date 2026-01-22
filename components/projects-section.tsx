@@ -112,14 +112,10 @@ export function ProjectsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16">
+          className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-400 bg-clip-text text-transparent mb-6 leading-tight py-2">
-            My Projects
+            Projects
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Innovative blockchain solutions and decentralized applications that
-            push the boundaries of Web3
-          </p>
         </motion.div>
 
         <Tabs
