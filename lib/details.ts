@@ -93,7 +93,6 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafkreigcalwjsh4c7zj66wzck7lu4cae2ts5ri2fjngp4hkeagnhtqml6q",
     },
-
     {
       name: "Prompt Engineering",
       image:
@@ -146,7 +145,6 @@ export const details = {
       github: "https://github.com/moayaan1911/nano-nft",
       demo: "https://youtu.be/b_E5zEbYb98?si=f2qi4EmIj1cr8MW5",
       featured: false,
-      tags: ["AI", "NFT", "Web3", "Gemini", "Thirdweb"],
     },
     {
       title: "QuickDapp",
@@ -157,7 +155,6 @@ export const details = {
       link: "https://www.npmjs.com/package/quickdapp",
       github: "https://github.com/moayaan1911/quickdapp",
       featured: false,
-      tags: ["Web3", "Template", "Smart Contracts", "AI", "NPM Package"],
     },
     {
       title: "LayerZero Token Transfer",
@@ -167,7 +164,6 @@ export const details = {
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/layerzero.jpg",
       github: "https://github.com/moayaan1911/layerzero-example",
       featured: true,
-      tags: ["LayerZero", "Cross-chain", "CLI"],
     },
     {
       title: "LoomLess",
@@ -178,7 +174,6 @@ export const details = {
       link: "https://chromewebstore.google.com/detail/loomless/hpblkhdjmbiokmnemdmccpppjeoddecj",
       github: "https://github.com/moayaan1911/loomless",
       featured: true,
-      tags: ["Chrome Extension", "Screen Recording", "Minimalist"],
     },
     {
       title: "CrowdFunding dApp",
@@ -190,7 +185,6 @@ export const details = {
       github: "https://github.com/moayaan1911/crowdfunding",
       demo: "https://youtu.be/jGEStOsKON0?si=3IjPS5v2jwc_3RBB",
       featured: true,
-      tags: ["Next.js", "Thirdweb", "Hardhat", "Web3"],
     },
     {
       title: "ERC-404 Token dApp",
@@ -202,7 +196,6 @@ export const details = {
       link: "https://cat404.vercel.app",
       demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
       featured: false,
-      tags: ["ERC-404", "Uniswap", "Testnet"],
     },
     // {
     //   title: "Kronobits",
@@ -220,7 +213,6 @@ export const details = {
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/finstar.png",
       link: "https://finstaravenue.com/",
-      tags: ["Freelance", "Landing Page"],
     },
   ],
   experiences: [
