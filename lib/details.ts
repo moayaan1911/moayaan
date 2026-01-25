@@ -1,6 +1,13 @@
 export const details = {
   salam: "👋 ٱلسَّلَامُ عَلَيْكُمْ",
   tagline: "♦moayaan.eth♦",
+  about: `Assalamualaikum guys! 🙌 This is Mohammad Ayaan Siddiqui. I'm a Full Stack Blockchain Developer, Crypto Investor and MBA in Blockchain Management with 2 years of experience rocking the Web3 world! I've worn many hats:
+Research Intern at a Hong Kong-based firm
+Founding Engineer at a Netherlands-based firm
+Full Stack Intern at a Singapore-based crypto hardware wallet firm
+Blockchain Developer at a US-based Bitcoin DeFi project
+PG Diploma in Blockchain Management from Cambridge International Qualifications (CIQ)
+MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy`,
   // description:
   // "Hello everyone, I am Mohammad Ayaan Siddiqui, a self-taught Full Stack Blockchain Developer, Crypto Investor and MBA graduate.",
   profile:

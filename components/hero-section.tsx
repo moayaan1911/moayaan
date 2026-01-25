@@ -251,7 +251,7 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white w-20 py-9 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 rounded-xl flex items-center justify-center"
-              onClick={() => window.open("https://t.me/moayaan1911", "_blank")}>
+              onClick={() => (window.location.href = "/chat")}>
               <FaComments className="text-9xl" />
             </Button>
           </motion.div>
