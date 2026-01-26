@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { details } from "@/lib/details";
 import Image from "next/image";
+import Link from "next/link";
 import { FaExternalLinkAlt, FaCalendarAlt } from "react-icons/fa";
 
 export function ExperienceSection() {
@@ -89,16 +90,18 @@ export function ExperienceSection() {
                       </div>
 
                       {experience.link && (
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          className="border-teal-400 text-teal-200 bg-transparent text-xs px-4 py-2 h-8 mt-4 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/40 hover:text-black hover:bg-gradient-to-r hover:from-emerald-500 hover:to-cyan-500"
-                          onClick={() =>
-                            window.open(experience.link!, "_blank")
-                          }>
-                          <FaExternalLinkAlt className="mr-0.5" />
-                          Visit Company
-                        </Button>
+                        <Link
+                          href={experience.link}
+                          target="_blank"
+                          rel="noopener noreferrer">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="border-teal-400 text-teal-200 bg-transparent text-xs px-4 py-2 h-8 mt-4 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/40 hover:text-black hover:bg-gradient-to-r hover:from-emerald-500 hover:to-cyan-500">
+                            <FaExternalLinkAlt className="mr-0.5" />
+                            Visit Company
+                          </Button>
+                        </Link>
                       )}
                     </CardContent>
                   </Card>

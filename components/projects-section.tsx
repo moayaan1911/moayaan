@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { details } from "@/lib/details";
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt, FaPlay, FaStar } from "react-icons/fa";
 import { useState } from "react";
 
@@ -117,28 +118,34 @@ export function ProjectsSection() {
                       {/* Action Buttons */}
                       <div className="flex gap-2 pt-2">
                         {project.link && (
-                          <button
-                            onClick={() => window.open(project.link, "_blank")}
-                            className="p-2.5 bg-white/10 backdrop-blur-sm rounded-xl text-white hover:bg-white/20 transition-all border border-white/10 hover:border-white/30 hover:scale-110"
+                          <Link
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2.5 bg-white/10 backdrop-blur-sm rounded-xl text-white hover:bg-white/20 transition-all border border-white/10 hover:border-white/30 hover:scale-110 inline-flex items-center justify-center"
                           >
                             <FaExternalLinkAlt className="text-sm" />
-                          </button>
+                          </Link>
                         )}
                         {project.github && (
-                          <button
-                            onClick={() => window.open(project.github, "_blank")}
-                            className="p-2.5 bg-white/10 backdrop-blur-sm rounded-xl text-white hover:bg-white/20 transition-all border border-white/10 hover:border-white/30 hover:scale-110"
+                          <Link
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2.5 bg-white/10 backdrop-blur-sm rounded-xl text-white hover:bg-white/20 transition-all border border-white/10 hover:border-white/30 hover:scale-110 inline-flex items-center justify-center"
                           >
                             <FaGithub className="text-sm" />
-                          </button>
+                          </Link>
                         )}
                         {project.demo && (
-                          <button
-                            onClick={() => window.open(project.demo, "_blank")}
-                            className="p-2.5 bg-red-500/80 backdrop-blur-sm rounded-xl text-white hover:bg-red-500 transition-all hover:scale-110"
+                          <Link
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-2.5 bg-red-500/80 backdrop-blur-sm rounded-xl text-white hover:bg-red-500 transition-all hover:scale-110 inline-flex items-center justify-center"
                           >
                             <FaPlay className="text-sm" />
-                          </button>
+                          </Link>
                         )}
                       </div>
                     </div>
