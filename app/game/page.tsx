@@ -49,6 +49,17 @@ export default function GamePage() {
   const ETH_HEIGHT = 120; // approx height of eth icon
   const OBSTACLE_WIDTH = 60;
   const OBSTACLE_HEIGHT = 80;
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   // Load high score from localStorage
   useEffect(() => {
@@ -115,6 +126,17 @@ export default function GamePage() {
     },
     [gameStarted, gameOver, endGame]
   );
+
+  // Touch handler for mobile
+  const handleTouch = useCallback(() => {
+    if (!gameRunningRef.current && gameStarted && !gameOver) {
+      return;
+    }
+    if (gameOver) return;
+    if (ethYRef.current <= 5) {
+      velocityRef.current = JUMP_STRENGTH;
+    }
+  }, [gameStarted, gameOver]);
 
   // Collision detection
   const checkCollision = useCallback(
@@ -270,43 +292,43 @@ export default function GamePage() {
       `}</style>
 
       {/* Home Button - Top Right */}
-      <div className="fixed top-6 right-6 z-50">
+      <div className="fixed top-4 right-4 md:top-6 md:right-6 z-50">
         <Button
           onClick={() => router.push("/")}
-          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-3 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex items-center gap-2 rounded-lg">
-          <FaHome className="text-lg" />
-          Home
+          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-3 py-2 md:px-6 md:py-3 text-sm md:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex items-center gap-1 md:gap-2 rounded-lg">
+          <FaHome className="text-base md:text-lg" />
+          <span className="hidden sm:inline">Home</span>
         </Button>
       </div>
 
       {/* Score Display */}
       {gameStarted && !gameOver && (
-        <div className="fixed top-6 left-6 z-50 flex items-center gap-4">
-          <div className="bg-black/50 backdrop-blur-md px-6 py-3 rounded-xl flex items-center gap-3">
-            <FaStar className="text-amber-400 text-xl" />
-            <span className="text-white text-2xl font-bold">{score}</span>
+        <div className="fixed top-4 left-4 md:top-6 md:left-6 z-50 flex items-center gap-2 md:gap-4">
+          <div className="bg-black/50 backdrop-blur-md px-3 py-2 md:px-6 md:py-3 rounded-xl flex items-center gap-2 md:gap-3">
+            <FaStar className="text-amber-400 text-base md:text-xl" />
+            <span className="text-white text-lg md:text-2xl font-bold">{score}</span>
           </div>
-          <div className="bg-black/50 backdrop-blur-md px-4 py-3 rounded-xl flex items-center gap-2">
-            <FaTrophy className="text-amber-500 text-lg" />
-            <span className="text-amber-300 text-lg">{highScore}</span>
+          <div className="bg-black/50 backdrop-blur-md px-2 py-2 md:px-4 md:py-3 rounded-xl flex items-center gap-1 md:gap-2">
+            <FaTrophy className="text-amber-500 text-sm md:text-lg" />
+            <span className="text-amber-300 text-sm md:text-lg">{highScore}</span>
           </div>
         </div>
       )}
 
       {/* Start Screen */}
       {!gameStarted && (
-        <div className="w-full h-screen flex items-center justify-center relative z-20">
-          <div className="text-center space-y-8">
-            <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+        <div className="w-full h-screen flex items-center justify-center relative z-20 px-4">
+          <div className="text-center space-y-6 md:space-y-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
               Ethereum Runner
             </h1>
-            <p className="text-xl text-purple-200">
-              Space to Jump | Escape to Stop
+            <p className="text-base md:text-xl text-purple-200">
+              {isMobile ? "Tap to Jump" : "Space to Jump | Escape to Stop"}
             </p>
             <Button
               onClick={handlePlayClick}
-              className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-12 py-6 text-xl font-bold transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-amber-500/50 rounded-xl flex items-center gap-3 mx-auto">
-              <FaPlay className="text-2xl" />
+              className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-8 py-4 md:px-12 md:py-6 text-lg md:text-xl font-bold transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-amber-500/50 rounded-xl flex items-center gap-2 md:gap-3 mx-auto">
+              <FaPlay className="text-xl md:text-2xl" />
               PLAY
             </Button>
           </div>
@@ -315,19 +337,25 @@ export default function GamePage() {
 
       {/* Game Screen */}
       {gameStarted && !gameOver && (
-        <div className="w-full h-screen flex flex-col items-center justify-end relative z-20">
+        <div
+          className="w-full h-screen flex flex-col items-center justify-end relative z-20 touch-none"
+          onClick={handleTouch}
+          onTouchStart={(e) => {
+            e.preventDefault();
+            handleTouch();
+          }}>
           {/* Ground Line */}
-          <div className="absolute bottom-32 w-full h-1 bg-gradient-to-r from-purple-500 to-blue-500"></div>
+          <div className="absolute bottom-24 md:bottom-32 w-full h-1 bg-gradient-to-r from-purple-500 to-blue-500"></div>
 
           {/* Ethereum Icon (Player) */}
           <div
             className="absolute transition-none"
             style={{
-              bottom: `calc(128px + ${ethY}px)`,
+              bottom: `calc(${isMobile ? '96px' : '128px'} + ${ethY}px)`,
               left: `${ETH_LEFT}%`,
               transform: "translateX(-50%)",
             }}>
-            <FaEthereum className="text-9xl text-purple-400 drop-shadow-[0_0_20px_rgba(168,85,247,1)]" />
+            <FaEthereum className="text-6xl md:text-9xl text-purple-400 drop-shadow-[0_0_20px_rgba(168,85,247,1)]" />
           </div>
 
           {/* Obstacles */}
@@ -336,57 +364,59 @@ export default function GamePage() {
               key={obstacle.id}
               className="absolute transition-none"
               style={{
-                bottom: "128px",
+                bottom: isMobile ? "96px" : "128px",
                 left: `${obstacle.x}px`,
               }}>
-              <GiMineExplosion className="text-7xl text-red-500 drop-shadow-[0_0_15px_rgba(239,68,68,0.8)]" />
+              <GiMineExplosion className="text-5xl md:text-7xl text-red-500 drop-shadow-[0_0_15px_rgba(239,68,68,0.8)]" />
             </div>
           ))}
 
           {/* Instructions */}
-          <div className="absolute top-10 left-1/2 transform -translate-x-1/2 text-center text-purple-200">
-            <p className="text-lg">Press SPACE to jump over obstacles!</p>
+          <div className="absolute top-16 md:top-10 left-1/2 transform -translate-x-1/2 text-center text-purple-200 px-4">
+            <p className="text-sm md:text-lg">
+              {isMobile ? "Tap anywhere to jump!" : "Press SPACE to jump over obstacles!"}
+            </p>
           </div>
         </div>
       )}
 
       {/* Game Over Modal */}
       {gameOver && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 p-8 rounded-2xl border border-purple-500/50 shadow-2xl shadow-purple-500/20 max-w-md w-full mx-4">
-            <div className="text-center space-y-6">
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 p-4 md:p-8 rounded-2xl border border-purple-500/50 shadow-2xl shadow-purple-500/20 max-w-md w-full">
+            <div className="text-center space-y-4 md:space-y-6">
               {/* Game Over Title */}
-              <div className="flex items-center justify-center gap-3">
-                <FaSkull className="text-4xl text-red-500 animate-pulse" />
-                <h2 className="text-4xl font-bold text-red-400">Game Over!</h2>
-                <FaSkull className="text-4xl text-red-500 animate-pulse" />
+              <div className="flex items-center justify-center gap-2 md:gap-3">
+                <FaSkull className="text-2xl md:text-4xl text-red-500 animate-pulse" />
+                <h2 className="text-2xl md:text-4xl font-bold text-red-400">Game Over!</h2>
+                <FaSkull className="text-2xl md:text-4xl text-red-500 animate-pulse" />
               </div>
 
               {/* Scores */}
-              <div className="space-y-4 py-4">
-                <div className="bg-black/40 rounded-xl p-4 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <FaStar className="text-3xl text-amber-400" />
-                    <span className="text-xl text-white">Your Score</span>
+              <div className="space-y-3 md:space-y-4 py-2 md:py-4">
+                <div className="bg-black/40 rounded-xl p-3 md:p-4 flex items-center justify-between">
+                  <div className="flex items-center gap-2 md:gap-3">
+                    <FaStar className="text-2xl md:text-3xl text-amber-400" />
+                    <span className="text-base md:text-xl text-white">Your Score</span>
                   </div>
-                  <span className="text-3xl font-bold text-amber-300">
+                  <span className="text-2xl md:text-3xl font-bold text-amber-300">
                     {score}
                   </span>
                 </div>
 
-                <div className="bg-black/40 rounded-xl p-4 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <FaTrophy className="text-3xl text-amber-500" />
-                    <span className="text-xl text-white">High Score</span>
+                <div className="bg-black/40 rounded-xl p-3 md:p-4 flex items-center justify-between">
+                  <div className="flex items-center gap-2 md:gap-3">
+                    <FaTrophy className="text-2xl md:text-3xl text-amber-500" />
+                    <span className="text-base md:text-xl text-white">High Score</span>
                   </div>
-                  <span className="text-3xl font-bold text-amber-500">
+                  <span className="text-2xl md:text-3xl font-bold text-amber-500">
                     {score > highScore ? score : highScore}
                   </span>
                 </div>
 
                 {score > highScore && (
-                  <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-xl p-3 border border-amber-500/50">
-                    <p className="text-amber-300 font-bold flex items-center justify-center gap-2">
+                  <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-xl p-2 md:p-3 border border-amber-500/50">
+                    <p className="text-amber-300 text-sm md:text-base font-bold flex items-center justify-center gap-2">
                       <FaTrophy className="text-amber-400" />
                       New High Score!
                       <FaTrophy className="text-amber-400" />
@@ -396,18 +426,18 @@ export default function GamePage() {
               </div>
 
               {/* Buttons */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2 md:gap-3">
                 <Button
                   onClick={handlePlayAgain}
-                  className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 rounded-xl flex items-center justify-center gap-3 w-full">
-                  <FaRedo className="text-xl" />
+                  className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 rounded-xl flex items-center justify-center gap-2 md:gap-3 w-full">
+                  <FaRedo className="text-lg md:text-xl" />
                   Play Again
                 </Button>
 
                 <Button
                   onClick={() => router.push("/")}
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 rounded-xl flex items-center justify-center gap-3 w-full">
-                  <FaHome className="text-xl" />
+                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 rounded-xl flex items-center justify-center gap-2 md:gap-3 w-full">
+                  <FaHome className="text-lg md:text-xl" />
                   Back to Home
                 </Button>
               </div>

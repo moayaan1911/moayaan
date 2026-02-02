@@ -335,11 +335,11 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "https://profiles.cyfrin.io/u/moayaan1911/achievements/solana",
     },
     {
-      title: "Blockchain Basics",
+      title: "Foundry 101",
       provider: "Cyfrin Updraft",
-      date: "September 2025",
+      date: "August 2025",
       certificateLink:
-        "https://gateway.lighthouse.storage/ipfs/bafkreidxcpsbl3c2qb32tzkz2qx3hwwdplj46dg6n34kmkdsj4ejkggyvq",
+        "https://profiles.cyfrin.io/u/moayaan1911/achievements/foundry",
     },
 
     {

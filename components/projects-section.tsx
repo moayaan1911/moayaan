@@ -190,7 +190,7 @@ export function ProjectsSection() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.4 }}
-                    className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl shadow-purple-500/50 relative"
+                    className="w-[240px] h-[240px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl shadow-purple-500/50 relative"
                   >
                     <Image
                       src={otherProjects[selectedOtherIndex]?.image || "/placeholder.svg"}
@@ -201,29 +201,29 @@ export function ProjectsSection() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
                     {/* Center Content */}
-                    <div className="absolute inset-0 flex flex-col justify-end p-4">
+                    <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-6">
                       <div className="text-center">
-                        <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-purple-500/90 backdrop-blur-sm rounded-full text-[10px] font-medium text-white mb-1">
-                          <FaFolderOpen className="text-[8px]" />
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-purple-500/90 backdrop-blur-sm rounded-full text-[10px] md:text-xs font-medium text-white mb-1.5">
+                          <FaFolderOpen className="text-[8px] md:text-[10px]" />
                           {(otherProjects[selectedOtherIndex] as any)?.tag || "Project"}
                         </span>
-                        <h3 className="text-base md:text-lg font-bold text-white mb-1 leading-tight">
+                        <h3 className="text-lg md:text-xl font-bold text-white mb-1.5 leading-tight">
                           {otherProjects[selectedOtherIndex]?.title}
                         </h3>
-                        <p className="text-gray-300 text-[9px] md:text-[10px] line-clamp-2 mb-2">
+                        <p className="text-gray-300 text-[10px] md:text-xs line-clamp-2 mb-3">
                           {otherProjects[selectedOtherIndex]?.description}
                         </p>
 
                         {/* Action Buttons */}
-                        <div className="flex gap-2 justify-center">
+                        <div className="flex gap-2.5 justify-center">
                           {otherProjects[selectedOtherIndex]?.link && (
                             <Link
                               href={otherProjects[selectedOtherIndex].link!}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all hover:scale-110"
+                              className="p-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all hover:scale-110"
                             >
-                              <HiOutlineGlobeAlt className="text-base" />
+                              <HiOutlineGlobeAlt className="text-lg" />
                             </Link>
                           )}
                           {otherProjects[selectedOtherIndex]?.github && (
@@ -231,9 +231,9 @@ export function ProjectsSection() {
                               href={otherProjects[selectedOtherIndex].github!}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all hover:scale-110"
+                              className="p-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all hover:scale-110"
                             >
-                              <FaGithub className="text-base" />
+                              <FaGithub className="text-lg" />
                             </Link>
                           )}
                           {otherProjects[selectedOtherIndex]?.demo && (
@@ -241,9 +241,9 @@ export function ProjectsSection() {
                               href={otherProjects[selectedOtherIndex].demo!}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="p-2 bg-red-500/80 backdrop-blur-sm rounded-full text-white hover:bg-red-500 transition-all hover:scale-110"
+                              className="p-2.5 bg-red-500/80 backdrop-blur-sm rounded-full text-white hover:bg-red-500 transition-all hover:scale-110"
                             >
-                              <FaPlay className="text-sm" />
+                              <FaPlay className="text-base" />
                             </Link>
                           )}
                         </div>

@@ -232,49 +232,48 @@ export default function ChatPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 flex flex-col">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md border-b border-purple-500/20">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-3 py-3 md:px-4 md:py-4 flex items-center justify-between">
           {/* Logo/Title */}
-          <div className="flex items-center gap-3">
-            <div className="relative w-10 h-10">
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="relative w-8 h-8 md:w-10 md:h-10">
               <Image
                 src={details.profile || "/placeholder.svg"}
                 alt="AI-Ayaan"
                 width={40}
                 height={40}
-                className="rounded-full border-2 border-purple-500"
+                className="rounded-full border-2 border-purple-500 w-full h-full"
               />
-              <div className="absolute -bottom-1 -right-1 bg-green-500 w-3 h-3 rounded-full border-2 border-gray-950"></div>
+              <div className="absolute -bottom-1 -right-1 bg-green-500 w-2.5 h-2.5 md:w-3 md:h-3 rounded-full border-2 border-gray-950"></div>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white flex items-center gap-2">
+              <h1 className="text-base md:text-xl font-bold text-white flex items-center gap-1 md:gap-2">
                 AI-Ayaan
-                <FaRobot className="text-purple-400 text-sm" />
+                <FaRobot className="text-purple-400 text-xs md:text-sm" />
               </h1>
-              <p className="text-xs text-gray-400">Ask me anything!</p>
+              <p className="text-[10px] md:text-xs text-gray-400">Ask me anything!</p>
             </div>
           </div>
 
           {/* Home Button */}
           <Button
             onClick={() => router.push("/")}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-6 py-2 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex items-center gap-2 rounded-lg">
-            <FaHome className="text-lg" />
-            Home
+            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-3 py-1.5 md:px-6 md:py-2 text-sm md:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex items-center gap-1 md:gap-2 rounded-lg">
+            <FaHome className="text-base md:text-lg" />
+            <span className="hidden sm:inline">Home</span>
           </Button>
         </div>
       </nav>
 
       {/* Disclaimer Banner */}
-      <div className="fixed top-20 left-0 right-0 z-40 bg-amber-500/10 border-b border-amber-500/30 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-2 flex items-center justify-center gap-2 text-amber-300 text-sm">
-          <FaExclamationTriangle className="text-amber-400" />
-          <span>
-            <strong>Disclaimer:</strong> This is an AI chatbot trained to mimic
-            me. Responses may be inaccurate. For accurate information, please{" "}
+      <div className="fixed top-[52px] md:top-[72px] left-0 right-0 z-40 bg-amber-500/10 border-b border-amber-500/30 backdrop-blur-sm">
+        <div className="container mx-auto px-3 md:px-4 py-1.5 md:py-2 flex items-center justify-center gap-1.5 md:gap-2 text-amber-300 text-[11px] md:text-sm">
+          <FaExclamationTriangle className="text-amber-400 shrink-0 text-xs md:text-sm" />
+          <span className="text-center">
+            <strong>Disclaimer:</strong> AI chatbot. Responses may be inaccurate.{" "}
             <button
               onClick={() => router.push("/")}
               className="underline hover:text-amber-200">
-              connect with the real me
+              Connect with the real me
             </button>
             .
           </span>
@@ -282,7 +281,7 @@ export default function ChatPage() {
       </div>
 
       {/* Chat Container */}
-      <div className="flex-1 container mx-auto px-4 pt-36 pb-32 max-w-3xl">
+      <div className="flex-1 container mx-auto px-3 md:px-4 pt-[100px] md:pt-36 pb-28 md:pb-32 max-w-3xl">
         {/* Messages */}
         <div className="space-y-4">
           {messages.map((message) => (
@@ -290,23 +289,23 @@ export default function ChatPage() {
               key={message.id}
               className={`flex ${message.isUser ? "justify-end" : "justify-start"}`}>
               <div
-                className={`flex items-start gap-3 max-w-[80%] ${message.isUser ? "flex-row-reverse" : ""}`}>
+                className={`flex items-start gap-2 md:gap-3 max-w-[90%] md:max-w-[80%] ${message.isUser ? "flex-row-reverse" : ""}`}>
                 {/* Avatar */}
                 {!message.isUser && (
-                  <div className="relative w-8 h-8 shrink-0">
+                  <div className="relative w-6 h-6 md:w-8 md:h-8 shrink-0">
                     <Image
                       src={details.profile || "/placeholder.svg"}
                       alt="AI-Ayaan"
                       width={32}
                       height={32}
-                      className="rounded-full border border-purple-500"
+                      className="rounded-full border border-purple-500 w-full h-full"
                     />
                   </div>
                 )}
 
                 {/* Message Bubble */}
                 <div
-                  className={`rounded-2xl px-4 py-3 ${
+                  className={`rounded-2xl px-3 py-2 md:px-4 md:py-3 ${
                     message.isUser
                       ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white"
                       : "bg-gray-800/80 text-gray-100 border border-purple-500/20"
@@ -319,7 +318,7 @@ export default function ChatPage() {
                     </div>
                   )}
                   <p
-                    className={`text-xs mt-1 ${message.isUser ? "text-purple-200" : "text-gray-500"}`}>
+                    className={`text-[10px] md:text-xs mt-1 ${message.isUser ? "text-purple-200" : "text-gray-500"}`}>
                     {message.timestamp.toLocaleTimeString([], {
                       hour: "2-digit",
                       minute: "2-digit",
@@ -333,21 +332,21 @@ export default function ChatPage() {
           {/* Typing Indicator */}
           {isTyping && (
             <div className="flex justify-start">
-              <div className="flex items-start gap-3">
-                <div className="relative w-8 h-8 shrink-0">
+              <div className="flex items-start gap-2 md:gap-3">
+                <div className="relative w-6 h-6 md:w-8 md:h-8 shrink-0">
                   <Image
                     src={details.profile || "/placeholder.svg"}
                     alt="AI-Ayaan"
                     width={32}
                     height={32}
-                    className="rounded-full border border-purple-500"
+                    className="rounded-full border border-purple-500 w-full h-full"
                   />
                 </div>
-                <div className="bg-gray-800/80 rounded-2xl px-4 py-3 border border-purple-500/20">
+                <div className="bg-gray-800/80 rounded-2xl px-3 py-2 md:px-4 md:py-3 border border-purple-500/20">
                   <div className="flex gap-1">
-                    <span className="w-2 h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:0ms]"></span>
-                    <span className="w-2 h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:150ms]"></span>
-                    <span className="w-2 h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:300ms]"></span>
+                    <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:0ms]"></span>
+                    <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:150ms]"></span>
+                    <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-purple-400 rounded-full animate-bounce [animation-delay:300ms]"></span>
                   </div>
                 </div>
               </div>
@@ -360,12 +359,12 @@ export default function ChatPage() {
 
       {/* Input Area */}
       <div className="fixed bottom-0 left-0 right-0 bg-gray-950/90 backdrop-blur-md border-t border-purple-500/20">
-        <div className="container mx-auto px-4 py-4 max-w-3xl">
+        <div className="container mx-auto px-3 md:px-4 py-3 md:py-4 max-w-3xl">
           {/* Message Limit Info */}
-          <div className="flex items-center justify-center gap-2 mb-3 text-sm">
-            <FaInfoCircle className="text-purple-400" />
+          <div className="flex items-center justify-center gap-1.5 md:gap-2 mb-2 md:mb-3 text-xs md:text-sm">
+            <FaInfoCircle className="text-purple-400 text-xs md:text-sm" />
             <span className="text-gray-400">
-              Messages used:{" "}
+              Messages:{" "}
               <span
                 className={
                   messagesUsed >= MAX_MESSAGES_PER_DAY
@@ -374,12 +373,13 @@ export default function ChatPage() {
                 }>
                 {messagesUsed}/{MAX_MESSAGES_PER_DAY}
               </span>{" "}
-              per 24 hours
+              <span className="hidden sm:inline">per 24 hours</span>
+              <span className="sm:hidden">/day</span>
             </span>
           </div>
 
           {/* Input */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3">
             <input
               type="text"
               value={inputValue}
@@ -387,19 +387,19 @@ export default function ChatPage() {
               onKeyDown={handleKeyDown}
               placeholder={
                 messagesUsed >= MAX_MESSAGES_PER_DAY
-                  ? "Message limit reached. Try again in 24 hours."
+                  ? "Limit reached. Try in 24h."
                   : "Ask AI-Ayaan anything..."
               }
               disabled={messagesUsed >= MAX_MESSAGES_PER_DAY || isTyping}
-              className="flex-1 bg-gray-800/80 border border-purple-500/30 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="flex-1 bg-gray-800/80 border border-purple-500/30 rounded-xl px-3 py-2.5 md:px-4 md:py-3 text-sm md:text-base text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             />
             <Button
               onClick={handleSendMessage}
               disabled={
                 !inputValue.trim() || messagesUsed >= MAX_MESSAGES_PER_DAY || isTyping
               }
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white p-3 rounded-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100">
-              <FaPaperPlane className="text-lg" />
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white p-2.5 md:p-3 rounded-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100">
+              <FaPaperPlane className="text-base md:text-lg" />
             </Button>
           </div>
         </div>

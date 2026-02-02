@@ -64,7 +64,7 @@ export default function DonatePage() {
             className="mb-6 bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-4">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-24 h-12 relative rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                <div className="w-24 h-16 relative rounded-lg overflow-hidden shadow-lg flex-shrink-0">
                   <Image
                     src="https://flagcdn.com/w320/ps.png"
                     alt="Palestine Flag"
