@@ -229,7 +229,7 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-purple-950 to-gray-950 flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-gray-950 via-purple-950 to-gray-950 flex flex-col">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md border-b border-purple-500/20">
         <div className="container mx-auto px-3 py-3 md:px-4 md:py-4 flex items-center justify-between">
@@ -257,7 +257,7 @@ export default function ChatPage() {
           {/* Home Button */}
           <Button
             onClick={() => router.push("/")}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-3 py-1.5 md:px-6 md:py-2 text-sm md:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex items-center gap-1 md:gap-2 rounded-lg">
+            className="bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-3 py-1.5 md:px-6 md:py-2 text-sm md:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex items-center gap-1 md:gap-2 rounded-lg">
             <FaHome className="text-base md:text-lg" />
             <span className="hidden sm:inline">Home</span>
           </Button>
@@ -307,7 +307,7 @@ export default function ChatPage() {
                 <div
                   className={`rounded-2xl px-3 py-2 md:px-4 md:py-3 ${
                     message.isUser
-                      ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white"
+                      ? "bg-linear-to-r from-purple-600 to-blue-600 text-white"
                       : "bg-gray-800/80 text-gray-100 border border-purple-500/20"
                   }`}>
                   {message.isUser ? (
@@ -398,7 +398,7 @@ export default function ChatPage() {
               disabled={
                 !inputValue.trim() || messagesUsed >= MAX_MESSAGES_PER_DAY || isTyping
               }
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white p-2.5 md:p-3 rounded-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100">
+              className="bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white p-2.5 md:p-3 rounded-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100">
               <FaPaperPlane className="text-base md:text-lg" />
             </Button>
           </div>

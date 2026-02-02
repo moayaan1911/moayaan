@@ -34,7 +34,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-400 via-blue-400 to-teal-400 bg-clip-text text-transparent mb-8 pb-1">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-linear-to-r from-purple-400 via-blue-400 to-teal-400 bg-clip-text text-transparent mb-8 pb-1">
             Projects
           </h2>
 
@@ -44,7 +44,7 @@ export function ProjectsSection() {
               onClick={() => handleTabChange("featured")}
               className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
                 activeTab === "featured"
-                  ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-orange-500/30"
+                  ? "bg-linear-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-orange-500/30"
                   : "text-gray-400 hover:text-white"
               }`}
             >
@@ -55,7 +55,7 @@ export function ProjectsSection() {
               onClick={() => handleTabChange("others")}
               className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
                 activeTab === "others"
-                  ? "bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg shadow-purple-500/30"
+                  ? "bg-linear-to-r from-purple-500 to-blue-500 text-white shadow-lg shadow-purple-500/30"
                   : "text-gray-400 hover:text-white"
               }`}
             >
@@ -104,7 +104,7 @@ export function ProjectsSection() {
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20 group-hover:via-black/70 transition-all duration-300" />
+                      <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-black/20 group-hover:via-black/70 transition-all duration-300" />
 
                       <div className="absolute inset-0 p-6 flex flex-col justify-between">
                         <div className="self-end">
@@ -161,7 +161,7 @@ export function ProjectsSection() {
                       </div>
 
                       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-transparent" />
+                        <div className="absolute inset-0 bg-linear-to-t from-purple-500/20 via-transparent to-transparent" />
                       </div>
                     </div>
                   </motion.div>
@@ -198,7 +198,7 @@ export function ProjectsSection() {
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black via-black/50 to-transparent" />
 
                     {/* Center Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-6">

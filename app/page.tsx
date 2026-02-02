@@ -9,7 +9,7 @@ import { GlobalEthBackground } from "@/components/global-eth-background";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-x-hidden">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-black to-gray-900 text-white overflow-x-hidden">
       <GlobalEthBackground />
 
       {/* Navigation */}

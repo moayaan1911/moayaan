@@ -1,5 +1,3 @@
-import { link } from "fs";
-
 export const details = {
   salam: "👋 ٱلسَّلَامُ عَلَيْكُمْ",
   tagline: "♦moayaan.eth♦",
@@ -231,7 +229,7 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
     {
       degree: "B.Tech in Computer Science and Engineering",
       university: "I. K. Gujral Punjab Technical University, India",
-      timeline: "February 2020 - July 2024",
+      timeline: "February 2020 - May 2024",
       universityLink: "https://ptu.ac.in/",
       degreeLink: "/BtechDegree.pdf",
       image: "/btech.png",

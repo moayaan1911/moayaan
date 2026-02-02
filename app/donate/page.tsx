@@ -51,7 +51,7 @@ export default function DonatePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-x-hidden">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-black to-gray-900 text-white overflow-x-hidden">
       <GlobalEthBackground />
 
       <div className="relative z-10 pt-20 pb-8 px-4">
@@ -64,7 +64,7 @@ export default function DonatePage() {
             className="mb-6 bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-4">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-24 h-16 relative rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                <div className="w-24 h-16 relative rounded-lg overflow-hidden shadow-lg shrink-0">
                   <Image
                     src="https://flagcdn.com/w320/ps.png"
                     alt="Palestine Flag"
@@ -86,7 +86,7 @@ export default function DonatePage() {
                 href={details.donation.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-600 to-red-600 hover:from-green-700 hover:to-red-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30">
+                className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r from-green-600 to-red-600 hover:from-green-700 hover:to-red-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30">
                 Donate 🇵🇸
               </Link>
             </div>
@@ -98,7 +98,7 @@ export default function DonatePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-6">
-            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-amber-400 via-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
               Support My Work
             </h1>
             <p className="text-gray-400 text-sm">
@@ -141,7 +141,7 @@ export default function DonatePage() {
                       />
                     )}
                     {key === "upi" && (
-                      <span className="text-xl font-bold bg-gradient-to-r from-orange-500 to-green-500 bg-clip-text text-transparent">
+                      <span className="text-xl font-bold bg-linear-to-r from-orange-500 to-green-500 bg-clip-text text-transparent">
                         UPI
                       </span>
                     )}
@@ -159,7 +159,7 @@ export default function DonatePage() {
                         value={item.qrValue}
                         size={120}
                         level="M"
-                        includeMargin={false}
+                        marginSize={0}
                       />
                     </div>
                   </div>
