@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const details = {
   salam: "👋 ٱلسَّلَامُ عَلَيْكُمْ",
   tagline: "♦moayaan.eth♦",
@@ -16,123 +18,87 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/ayaaneth",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/linkedin.png",
+      image: "/linkedin.png",
     },
     {
       name: "GitHub",
       link: "https://github.com/moayaan1911",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/github.png",
+      image: "/github.png",
     },
     {
       name: "Hashnode",
       link: "https://blog.moayaan.com",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/hashnode.png",
-    },
-    {
-      name: "Upwork",
-      link: "https://www.upwork.com/freelancers/mdayaans",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/upwork.png",
+      image: "/hashnode.png",
     },
     {
       name: "Twitter",
       link: "https://x.com/moayaan1911",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/x.png",
+      image: "/x.png",
     },
     {
       name: "Peerlist",
       link: "https://peerlist.io/ayaaneth",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/peerlist.png",
+      image: "/peerlist.png",
     },
     {
       name: "ENS",
       link: "https://app.ens.domains/moayaan.eth",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/ens.png",
+      image: "/ens.png",
     },
     {
       name: "Telegram",
       link: "https://t.me/moayaan1911",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/telegram.png",
+      image: "/telegram.png",
     },
   ],
   donation: {
     name: "Palestine",
     link: "https://donate.unrwa.org/gaza/~my-donation",
-    image:
-      "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/palestine.png",
   },
   skills: [
     {
       name: "Claude Code / AI Tools",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafkreigcalwjsh4c7zj66wzck7lu4cae2ts5ri2fjngp4hkeagnhtqml6q",
+      image: "/claude-code.png",
     },
     {
       name: "Prompt Engineering",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai.jpeg",
+      image: "/prompt-engineering.jpeg",
     },
     {
       name: "Next.js",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/next.jpeg",
+      image: "/next.jpeg",
     },
     {
       name: "Solidity",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/solidity.webp",
+      image: "/solidity.webp",
     },
     {
       name: "Project Management",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/pm.jpg",
+      image: "/pm.jpg",
     },
     {
       name: "Technical Leadership",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
+      image: "/technical-leadership.png",
     },
     {
       name: "Foundry",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/foundry.png",
+      image: "/foundry.png",
     },
-    // {
-    //   name: "Rust",
-    //   image:
-    //     "https://gateway.lighthouse.storage/ipfs/bafkreia2ypwbjrsrmusfqn6iygonjqqjmv2fg2m5u75dz2kzdqj5oicrau",
-    // },
     {
       name: "Solana",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafkreihfoippppifivpnf6cc5ixwn7lxcw2wz2rrtwazdb4qpa4dabqyvq",
+      image: "/solana.png",
     },
     {
       name: "JavaScript",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/JavaScript.png",
+      image: "/javascript.png",
     },
-    // {
-    //   name: "TypeScript",
-    //   image:
-    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/Typescript.png",
-    // },
     {
       name: "Web3.js/Ethers.js",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ethersjs.png",
+      image: "/ethersjs.png",
     },
     {
       name: "Hardhat",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/hardhat.png",
+      image: "/hardhat.png",
     },
   ],
   projects: [
@@ -141,101 +107,78 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       description:
         "An Exogenous Algorithmic Pegged Stablecoin built using Foundry and Solidity",
       image:
-        "https://emerald-dizzy-stoat-639.mypinata.cloud/ipfs/bafkreihrxosc22m6c5sjw2smbdh2gia4btuq4sfctmxsedskifhczbgjd4?pinataGatewayToken=DFsUmTMRXBF_0KmYgSHbz1ipOKWFjv_rjyvxjq_vHNcdnP0KeJ64G8QQlgmhZyo8",
+        "https://res.cloudinary.com/dogvctfpi/image/upload/v1770011059/dsc_qzt2yx.jpg",
       github: "https://github.com/moayaan1911/stablecoin",
       link: "",
       featured: true,
       tag: "Smart Contract",
     },
     {
-      title: "QuickDapp",
-      description:
-        "An NPM Package that sets up your complete Web3 dApp starter template with smart contracts, gasless wallet connectivity, and AI assistant.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafkreie26hweqarznpjdddi7l2j5dfl7xjsaxvx2iccliuffgk6grvqu6e",
-      link: "https://www.npmjs.com/package/quickdapp",
-      github: "https://github.com/moayaan1911/quickdapp",
-      featured: false,
-    },
-    {
-      title: "LayerZero Token Transfer",
-      description:
-        "A non-UI cli based contract implementation of LayerZero protocol for token transfer across chains.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/layerzero.jpg",
-      github: "https://github.com/moayaan1911/layerzero-example",
-      featured: true,
-    },
-    {
       title: "LoomLess",
       description:
         "A lightweight, Minimalist Chrome extension for effortless screen recording with clean, intuitive interface",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/loomless.png",
+      image: "/LoomLess.png",
       link: "https://chromewebstore.google.com/detail/loomless/hpblkhdjmbiokmnemdmccpppjeoddecj",
       github: "https://github.com/moayaan1911/loomless",
       featured: true,
+      tag: "Chrome Extension",
     },
     {
-      title: "ERC-404 Token dApp",
+      title: "AuraScore",
       description:
-        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
-      github: "https://github.com/moayaan1911/erc404-uniswap",
-      link: "https://cat404.vercel.app",
-      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
-      featured: false,
-    },
-    // {
-    //   title: "Kronobits",
-    //   description:
-    //     "Landing page for Kronobits built as a FREELANCER using Next.js and Aceternity UI",
-    //   image:
-    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/next.jpeg",
-    //   link: "https://www.kronobits.com",
-    //   tags: ["Next.js", "Aceternity UI", "Freelance"],
-    // },
-
-    {
-      title: "Finstar Avenue",
-      description: "Home page for Finstar Avenue, built as a freelancer.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/finstar.png",
-      link: "https://finstaravenue.com/",
+        "Track your wallet's activity, DeFi engagement, transaction history, and cross-chain presence",
+      image: "/aurascore.png",
+      link: "https://onchain-aurascore.vercel.app/",
+      github: "https://github.com/moayaan1911/aurascore",
+      demo: "https://youtu.be/xnDc7OB0KZc?si=9OMcqPkBb9w8oX1F",
+      featured: true,
+      tag: "Web App",
     },
     {
-      title: "ERC-404 Token dApp",
+      title: "DAOs and Governance",
       description:
-        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
-      github: "https://github.com/moayaan1911/erc404-uniswap",
-      link: "https://cat404.vercel.app",
-      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
+        "A complete DAO governance system featuring token-based voting, timelock security, and decentralized proposal execution.",
+      image: "/dao.webp",
+      github: "https://github.com/moayaan1911/daos-and-governance",
       featured: false,
+      tag: "Smart Contract",
     },
     {
-      title: "ERC-404 Token dApp",
+      title: "qixAI",
       description:
-        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
-      github: "https://github.com/moayaan1911/erc404-uniswap",
-      link: "https://cat404.vercel.app",
-      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
+        "MINIMALIST AI Companion - NO SignUp, LifeTime FREE, NO Data Collection",
+      image: "/qix.png",
+      link: "https://chromewebstore.google.com/detail/qixai-minimalist-ai-compa/jmldilfddmdikkjpcnfdibmelfgnlhcg?hl=en-US",
       featured: false,
+      tag: "Chrome Extension",
     },
     {
-      title: "ERC-404 Token dApp",
+      title: "Upgradable Smart Contracts",
       description:
-        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
-      github: "https://github.com/moayaan1911/erc404-uniswap",
-      link: "https://cat404.vercel.app",
-      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
+        "A complete implementation of the UUPS (Universal Upgradeable Proxy Standard) pattern.",
+      image: "/upgradable.jpg",
+      github: "https://github.com/moayaan1911/upgradable-contracts",
       featured: false,
+      tag: "Smart Contract",
+    },
+    {
+      title: "Aidrop and Signature",
+      description:
+        "A gas-efficient, secure airdrop system using Merkle Trees and EIP-712 Signatures",
+      image: "/airdrop.webp",
+      github: "https://github.com/moayaan1911/MerkleAidropAndSignatures",
+      featured: false,
+      tag: "Smart Contract",
+    },
+    {
+      title: "QuickDapp",
+      description:
+        "Web3 dApp starter template with smart contracts, gasless wallet connectivity, and AI assistant.",
+      image: "/quickdapp.png",
+      link: "https://www.npmjs.com/package/quickdapp",
+      github: "https://github.com/moayaan1911/quickdapp",
+      featured: false,
+      tag: "NPM Package",
     },
   ],
   experiences: [
@@ -246,7 +189,6 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       link: "https://bima.money",
       description:
         "Contributed to the development of a Bitcoin-based DeFi stablecoin ecosystem, implementing advanced features including yield aggregators, lending and borrowing protocols, and PSM modules",
-      certificateLink: null,
     },
     {
       company: "Cypherock",
@@ -256,24 +198,13 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       description:
         "Developed and enhanced software solutions for hardware cryptocurrency wallets, focusing on user experience optimization and bug resolution",
     },
-    // {
-    //   company: "Finstar Avenue",
-    //   designation: "Tech Advisor and Freelance Developer",
-    //   timeline: "Feb 2024 - Jul 2024",
-    //   link: "https://finstaravenue.com/",
-    //   image:
-    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/finstar.webp",
-    //   tags: ["Freelance"],
-    //   description:
-    //     "Developed their primary website and provided technical consulting to help launch innovative solutions for their clients",
-    // },
     {
       company: "D Frame Foundation",
       designation: "Founding Engineer",
       timeline: "Dec 2022 - Mar 2024",
       link: "https://dframe.org/",
       description:
-        "Built Chrome extensions and client dashboards while integrating comprehensive data pipelines, AI APIs, and blockchain-based payout systems",
+        "Led development of Chrome extensions and client dashboards while integrating comprehensive data pipelines, AI APIs, and blockchain-based payout systems",
     },
     {
       company: "EmergentX",
@@ -291,11 +222,9 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       timeline: "October 2024 - December 2025",
       universityLink: "https://www.unimarconi.it/",
       degreeLink: null,
-      pgDiplomaLink:
-        "https://gateway.lighthouse.storage/ipfs/bafkreiaolsp5choxmlcmufdgn6qjipxjkae2lf5ye47ln74ihcncoxeu2e",
+      pgDiplomaLink: "/pg-diploma.pdf",
       mbaLink: null,
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/mba.jpeg",
+      image: "/mba.jpeg",
       description:
         "MBA in Blockchain Management focused on strategy, leadership, project management, decision-making, and marketing tailored to the blockchain industry.",
     },
@@ -304,10 +233,8 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       university: "I. K. Gujral Punjab Technical University, India",
       timeline: "February 2020 - July 2024",
       universityLink: "https://ptu.ac.in/",
-      degreeLink:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/PTUDegree.pdf",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ptu.png",
+      degreeLink: "/BtechDegree.pdf",
+      image: "/btech.png",
       description:
         "Core CS education covering programming, software engineering, databases, and modern development with practical full‑stack experience.",
     },
@@ -352,8 +279,7 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
   ],
   connect: {
     thankYouMessage: "🙏 Thanks for exploring my work! ✨",
-    celebrationGif:
-      "https://media1.tenor.com/m/yTsLVmcpUGsAAAAC/stake-staking.gif",
+    celebrationGif: "/thanks.gif",
   },
   footer: {
     creditText: "vibe coded with claude-code",
