@@ -141,7 +141,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex justify-center gap-4 max-w-3xl mx-auto">
+            className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-3xl mx-auto px-4">
             {details.socials.map((social, index) => (
               <Link
                 key={social.name}
@@ -157,9 +157,9 @@ export function HeroSection() {
                     boxShadow: "0 0 20px rgba(168, 85, 247, 0.5)",
                   }}
                   whileTap={{ scale: 0.9 }}
-                  className={`w-12 h-12 border-2 ${getBorderColor(
+                  className={`w-10 h-10 md:w-12 md:h-12 border-2 ${getBorderColor(
                     social.name,
-                  )} hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-500 rounded-full p-2.5 bg-transparent cursor-pointer flex items-center justify-center`}>
+                  )} hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-500 rounded-full p-2 md:p-2.5 bg-transparent cursor-pointer flex items-center justify-center`}>
                   <Image
                     src={social.image}
                     alt={social.name}
@@ -177,30 +177,30 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex justify-center items-center gap-4">
+            className="flex flex-col md:flex-row justify-center items-center gap-4 px-4">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-12 py-9 text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex flex-col items-center gap-1.5"
+              className="w-full md:w-auto bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 md:px-12 py-6 md:py-9 text-lg md:text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex flex-col items-center gap-1"
               data-cal-namespace="meet"
               data-cal-link="moayaan1911/meet"
               data-cal-config='{"layout":"month_view"}'>
-              <span className="flex items-center text-2xl">
-                <FaCalendarAlt className="mr-3 text-2xl" />
+              <span className="flex items-center text-xl md:text-2xl">
+                <FaCalendarAlt className="mr-2 md:mr-3 text-xl md:text-2xl" />
                 Get in Touch
               </span>
-              <span className="text-sm font-normal text-purple-200">
+              <span className="text-xs md:text-sm font-normal text-purple-200">
                 Freelancing | Job Offer | Crypto & DeFi Guide
               </span>
             </Button>
-            <Link href="/donate">
+            <Link href="/donate" className="w-full md:w-auto">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-12 py-9 text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex flex-col items-center gap-1.5">
-                <span className="flex items-center text-2xl">
-                  <FaCoffee className="mr-3 text-2xl" />
+                className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-8 md:px-12 py-6 md:py-9 text-lg md:text-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex flex-col items-center gap-1">
+                <span className="flex items-center text-xl md:text-2xl">
+                  <FaCoffee className="mr-2 md:mr-3 text-xl md:text-2xl" />
                   Support My Work
                 </span>
-                <span className="text-sm font-normal text-amber-200">
+                <span className="text-xs md:text-sm font-normal text-amber-200">
                   Buy Me a Coffee ☕
                 </span>
               </Button>

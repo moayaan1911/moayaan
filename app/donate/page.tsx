@@ -8,6 +8,7 @@ import { QRCodeSVG } from "qrcode.react";
 import Image from "next/image";
 import Link from "next/link";
 import { GlobalEthBackground } from "@/components/global-eth-background";
+import { details } from "@/lib/details";
 
 const donationAddresses = {
   solana: {
@@ -63,7 +64,7 @@ export default function DonatePage() {
             className="mb-6 bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-4">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 relative rounded-lg overflow-hidden shadow-lg flex-shrink-0">
+                <div className="w-24 h-12 relative rounded-lg overflow-hidden shadow-lg flex-shrink-0">
                   <Image
                     src="https://flagcdn.com/w320/ps.png"
                     alt="Palestine Flag"
@@ -76,11 +77,13 @@ export default function DonatePage() {
                     <FaHeart className="text-red-500 text-sm" />
                     Support Palestine
                   </h2>
-                  <p className="text-gray-400 text-xs">Help the people of Gaza</p>
+                  <p className="text-gray-400 text-xs">
+                    Help the people of Gaza
+                  </p>
                 </div>
               </div>
               <Link
-                href="https://www.pcrf.net/"
+                href={details.donation.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-600 to-red-600 hover:from-green-700 hover:to-red-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30">

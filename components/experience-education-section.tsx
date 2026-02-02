@@ -7,7 +7,9 @@ import { PiCertificate } from "react-icons/pi";
 
 export function ExperienceEducationSection() {
   return (
-    <section id="experience" className="py-20 relative">
+    <section
+      id="experience"
+      className="py-20 relative">
       <div className="container mx-auto px-4">
         {/* Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
@@ -57,8 +59,12 @@ export function ExperienceEducationSection() {
                           </a>
                         )}
                       </div>
-                      <p className="text-gray-400 text-sm">{experience.company}</p>
-                      <p className="text-gray-500 text-xs mb-2">{experience.timeline}</p>
+                      <p className="text-gray-400 text-sm">
+                        {experience.company}
+                      </p>
+                      <p className="text-gray-500 text-xs mb-2">
+                        {experience.timeline}
+                      </p>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {experience.description}
                       </p>
@@ -77,7 +83,7 @@ export function ExperienceEducationSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
               className="text-2xl md:text-3xl font-bold text-white mb-8 italic">
-              Professional Certifications
+              Certifications
             </motion.h3>
 
             <div className="relative">

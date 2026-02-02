@@ -61,14 +61,24 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/telegram.png",
     },
-    {
-      name: "Palestine",
-      link: "https://donate.unrwa.org/gaza/~my-donation",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/palestine.png",
-    },
   ],
+  donation: {
+    name: "Palestine",
+    link: "https://donate.unrwa.org/gaza/~my-donation",
+    image:
+      "https://gateway.lighthouse.storage/ipfs/bafybeid4kxobmzrmazn6tloo42mptsx4pbwrgiacwmhkp73g4bc2hrpczu/palestine.png",
+  },
   skills: [
+    {
+      name: "Claude Code / AI Tools",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafkreigcalwjsh4c7zj66wzck7lu4cae2ts5ri2fjngp4hkeagnhtqml6q",
+    },
+    {
+      name: "Prompt Engineering",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai.jpeg",
+    },
     {
       name: "Next.js",
       image:
@@ -88,16 +98,6 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       name: "Technical Leadership",
       image:
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/s.png",
-    },
-    {
-      name: "Claude Code / AI Tools",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafkreigcalwjsh4c7zj66wzck7lu4cae2ts5ri2fjngp4hkeagnhtqml6q",
-    },
-    {
-      name: "Prompt Engineering",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/ai.jpeg",
     },
     {
       name: "Foundry",
@@ -137,15 +137,15 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
   ],
   projects: [
     {
-      title: "Nano-NFT",
+      title: "StableCoin",
       description:
-        "AI NFT Generator and Gasless Minter powered by Gemini Nano Banana and Thirdweb",
+        "An Exogenous Algorithmic Pegged Stablecoin built using Foundry and Solidity",
       image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeigsmwdkp6bfp6ozlsja6wi7pnyswvusv7ubkdwpkiohokd5da52ii",
-      link: "https://nano-nft.vercel.app/",
-      github: "https://github.com/moayaan1911/nano-nft",
-      demo: "https://youtu.be/b_E5zEbYb98?si=f2qi4EmIj1cr8MW5",
-      featured: false,
+        "https://emerald-dizzy-stoat-639.mypinata.cloud/ipfs/bafkreihrxosc22m6c5sjw2smbdh2gia4btuq4sfctmxsedskifhczbgjd4?pinataGatewayToken=DFsUmTMRXBF_0KmYgSHbz1ipOKWFjv_rjyvxjq_vHNcdnP0KeJ64G8QQlgmhZyo8",
+      github: "https://github.com/moayaan1911/stablecoin",
+      link: "",
+      featured: true,
+      tag: "Smart Contract",
     },
     {
       title: "QuickDapp",
@@ -177,17 +177,6 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       featured: true,
     },
     {
-      title: "CrowdFunding dApp",
-      description:
-        "Decentralized Crowdfunding dapp built using Next.js, Thirdweb and HardHat",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/crowdfunding.png",
-      link: "https://zkfund.vercel.app/",
-      github: "https://github.com/moayaan1911/crowdfunding",
-      demo: "https://youtu.be/jGEStOsKON0?si=3IjPS5v2jwc_3RBB",
-      featured: true,
-    },
-    {
       title: "ERC-404 Token dApp",
       description:
         "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
@@ -215,6 +204,39 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/finstar.png",
       link: "https://finstaravenue.com/",
     },
+    {
+      title: "ERC-404 Token dApp",
+      description:
+        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
+      github: "https://github.com/moayaan1911/erc404-uniswap",
+      link: "https://cat404.vercel.app",
+      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
+      featured: false,
+    },
+    {
+      title: "ERC-404 Token dApp",
+      description:
+        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
+      github: "https://github.com/moayaan1911/erc404-uniswap",
+      link: "https://cat404.vercel.app",
+      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
+      featured: false,
+    },
+    {
+      title: "ERC-404 Token dApp",
+      description:
+        "A collection of 10000 ERC404 tokens deployed on the Sepolia testnet.",
+      image:
+        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/erc404.png",
+      github: "https://github.com/moayaan1911/erc404-uniswap",
+      link: "https://cat404.vercel.app",
+      demo: "https://youtu.be/oAXGSCuEQ0Q?si=k7g10Lis_NvUIAGB",
+      featured: false,
+    },
   ],
   experiences: [
     {
@@ -222,24 +244,18 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       designation: "Blockchain Developer",
       timeline: "July 2024 - October 2025",
       link: "https://bima.money",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafkreibxnzv5cwodutpiarpvpn4cj65zbmfpwv2th27bpdw5d25vxdaayq",
-      tags: ["Contract"],
       description:
         "Contributed to the development of a Bitcoin-based DeFi stablecoin ecosystem, implementing advanced features including yield aggregators, lending and borrowing protocols, and PSM modules",
       certificateLink: null,
     },
-    // {
-    //   company: "Cypherock",
-    //   designation: "Full Stack Web3 Developer Intern",
-    //   timeline: "Apr 2024 - Jul 2024",
-    //   link: "https://www.cypherock.com/",
-    //   image:
-    //     "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/cypherock.png",
-    //   tags: ["Intern"],
-    //   description:
-    //     "Developed and enhanced software solutions for hardware cryptocurrency wallets, focusing on user experience optimization and bug resolution",
-    // },
+    {
+      company: "Cypherock",
+      designation: "Full Stack Web3 Developer Intern",
+      timeline: "Apr 2024 - Jul 2024",
+      link: "https://www.cypherock.com/",
+      description:
+        "Developed and enhanced software solutions for hardware cryptocurrency wallets, focusing on user experience optimization and bug resolution",
+    },
     // {
     //   company: "Finstar Avenue",
     //   designation: "Tech Advisor and Freelance Developer",
@@ -256,9 +272,6 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       designation: "Founding Engineer",
       timeline: "Dec 2022 - Mar 2024",
       link: "https://dframe.org/",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/dframe.png",
-      tags: ["Full Time", "Co-Founder"],
       description:
         "Built Chrome extensions and client dashboards while integrating comprehensive data pipelines, AI APIs, and blockchain-based payout systems",
     },
@@ -267,12 +280,8 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       designation: "Blockchain Research Intern",
       timeline: "Nov 2021 - Mar 2022",
       link: "https://emergentx.io/",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/emergentx.jpeg",
-      tags: ["Intern"],
       description:
         "Conducted comprehensive research and analysis on various cryptocurrency and NFT projects, delivering detailed market reports and insights",
-      certificateLink: null,
     },
   ],
   education: [
@@ -305,22 +314,11 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
   ],
   certifications: [
     {
-      title: "Blockchain Basics",
-      provider: "Cyfrin Updraft",
-      date: "September 2025",
-      certificateLink:
-        "https://gateway.lighthouse.storage/ipfs/bafkreidxcpsbl3c2qb32tzkz2qx3hwwdplj46dg6n34kmkdsj4ejkggyvq",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafkreig3auowxpyr23epgxfj7huplooazchwvl6yoc2pcatvgvvvfkg7ly",
-    },
-    {
       title: "Generative AI Foundations",
       provider: "Upgrad in Collaboration with Microsoft",
       date: "May 2025",
       certificateLink:
         "https://certificates.upgrad.com/e65c8792-48dd-497a-a182-d16a67ebbc14-Gen-AI-LMwgtsq2ZWKmA6dR.jpeg",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/upgrad.jpeg",
     },
     {
       title: "Generative AI for Software Development",
@@ -328,17 +326,28 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
       date: "September 2024",
       certificateLink:
         "https://www.coursera.org/account/accomplishments/professional-cert/UXN8CLPQAVDI",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/deeplearning.png",
     },
+    {
+      title: "Solana",
+      provider: "Cyfrin Updraft",
+      date: "February 2026",
+      certificateLink:
+        "https://profiles.cyfrin.io/u/moayaan1911/achievements/solana",
+    },
+    {
+      title: "Blockchain Basics",
+      provider: "Cyfrin Updraft",
+      date: "September 2025",
+      certificateLink:
+        "https://gateway.lighthouse.storage/ipfs/bafkreidxcpsbl3c2qb32tzkz2qx3hwwdplj46dg6n34kmkdsj4ejkggyvq",
+    },
+
     {
       title: "Ethereum Developer",
       provider: "Cadena in collaboration with Polygon",
       date: "September 2022",
       certificateLink:
         "https://opensea.io/item/matic/0x112721c13dd721a543a0c805791dceebdbaf308d/124",
-      image:
-        "https://gateway.lighthouse.storage/ipfs/bafybeidlpfu7vy2rgevvo2msiebtvjfjtejlgjsgjja4jixly45sq3woii/cadena.jpeg",
     },
   ],
   connect: {
@@ -351,7 +360,8 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
   },
   aboutMe: {
     en: {
-      intro: "Assalamualaikum guys! 🙌 This is Mohammad Ayaan Siddiqui (♦moayaan.eth♦). I'm a Full Stack Blockchain Developer, Crypto Investor and MBA in Blockchain Management with 2 years of experience rocking the Web3 world! 🚀",
+      intro:
+        "Assalamualaikum guys! 🙌 This is Mohammad Ayaan Siddiqui (♦moayaan.eth♦). I'm a Full Stack Blockchain Developer, Crypto Investor and MBA in Blockchain Management with 2 years of experience rocking the Web3 world! 🚀",
       hatsList: "I've worn many hats:",
       roles: [
         "Research Intern at a Hong Kong-based firm",
@@ -361,10 +371,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "PG Diploma in Blockchain Management from Cambridge International Qualifications (CIQ)",
         "MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy",
       ],
-      closing: "I regularly use AI tools like Claude Code, Remotion, ClawdBot, Perplexity and Cursor to supercharge my productivity in both private and professional work. I spend hours daily researching crypto projects, observing market trends, and staying ahead of the curve. I love to vibe-code useful mini projects including Chrome extensions and mobile apps, alongside my core domain of Blockchain development! 💻✨"
+      closing:
+        "I regularly use AI tools like Claude Code, Remotion, ClawdBot, Perplexity and Cursor to supercharge my productivity in both private and professional work. I spend hours daily researching crypto projects, observing market trends, and staying ahead of the curve. I love to vibe-code useful mini projects including Chrome extensions and mobile apps, alongside my core domain of Blockchain development! 💻✨",
     },
     hi: {
-      intro: "Assalamualaikum doston! 🙌 Main hoon Mohammad Ayaan Siddiqui (♦moayaan.eth♦). Main ek Full Stack Blockchain Developer, Crypto Investor aur MBA in Blockchain Management hoon jisko Web3 ki duniya mein 2 saal ka experience hai! 🚀",
+      intro:
+        "Assalamualaikum doston! 🙌 Main hoon Mohammad Ayaan Siddiqui (♦moayaan.eth♦). Main ek Full Stack Blockchain Developer, Crypto Investor aur MBA in Blockchain Management hoon jisko Web3 ki duniya mein 2 saal ka experience hai! 🚀",
       hatsList: "Maine kaafi roles handle kiye hain:",
       roles: [
         "Hong Kong ki ek firm mein Research Intern",
@@ -374,10 +386,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "Cambridge International Qualifications (CIQ) se PG Diploma in Blockchain Management",
         "University of Studies Guglielmo Marconi, Italy se MBA in Blockchain Management",
       ],
-      closing: "Main regularly AI tools jaise Claude Code, Remotion, ClawdBot, Perplexity aur Cursor use karta hoon apni productivity ko supercharge karne ke liye — personal aur professional dono kaam mein. Main rozana ghanton crypto projects research karta hoon, market trends observe karta hoon, aur hamesha curve se aage rehta hoon. Mujhe useful mini projects vibe-code karna pasand hai — Chrome extensions aur mobile apps banata hoon, apne core domain Blockchain development ke saath! 💻✨"
+      closing:
+        "Main regularly AI tools jaise Claude Code, Remotion, ClawdBot, Perplexity aur Cursor use karta hoon apni productivity ko supercharge karne ke liye — personal aur professional dono kaam mein. Main rozana ghanton crypto projects research karta hoon, market trends observe karta hoon, aur hamesha curve se aage rehta hoon. Mujhe useful mini projects vibe-code karna pasand hai — Chrome extensions aur mobile apps banata hoon, apne core domain Blockchain development ke saath! 💻✨",
     },
     ur: {
-      intro: "السلام علیکم دوستو! 🙌 میں محمد ایان صدیقی ہوں (♦moayaan.eth♦)۔ میں ایک Full Stack Blockchain Developer، Crypto Investor اور MBA in Blockchain Management ہوں جسے Web3 کی دنیا میں 2 سال کا تجربہ ہے! 🚀",
+      intro:
+        "السلام علیکم دوستو! 🙌 میں محمد ایان صدیقی ہوں (♦moayaan.eth♦)۔ میں ایک Full Stack Blockchain Developer، Crypto Investor اور MBA in Blockchain Management ہوں جسے Web3 کی دنیا میں 2 سال کا تجربہ ہے! 🚀",
       hatsList: "میں نے کئی کردار نبھائے ہیں:",
       roles: [
         "ہانگ کانگ کی ایک فرم میں Research Intern",
@@ -387,10 +401,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "Cambridge International Qualifications (CIQ) سے PG Diploma in Blockchain Management",
         "University of Studies Guglielmo Marconi, Italy سے MBA in Blockchain Management",
       ],
-      closing: "میں باقاعدگی سے AI tools جیسے Claude Code، Remotion، ClawdBot، Perplexity اور Cursor استعمال کرتا ہوں اپنی پیداواری صلاحیت کو بڑھانے کے لیے — ذاتی اور پیشہ ورانہ دونوں کاموں میں۔ میں روزانہ گھنٹوں crypto projects کی تحقیق کرتا ہوں، مارکیٹ کے رجحانات کا مشاہدہ کرتا ہوں، اور ہمیشہ آگے رہتا ہوں۔ مجھے useful mini projects vibe-code کرنا پسند ہے — Chrome extensions اور mobile apps بناتا ہوں، اپنے بنیادی شعبے Blockchain development کے ساتھ! 💻✨"
+      closing:
+        "میں باقاعدگی سے AI tools جیسے Claude Code، Remotion، ClawdBot، Perplexity اور Cursor استعمال کرتا ہوں اپنی پیداواری صلاحیت کو بڑھانے کے لیے — ذاتی اور پیشہ ورانہ دونوں کاموں میں۔ میں روزانہ گھنٹوں crypto projects کی تحقیق کرتا ہوں، مارکیٹ کے رجحانات کا مشاہدہ کرتا ہوں، اور ہمیشہ آگے رہتا ہوں۔ مجھے useful mini projects vibe-code کرنا پسند ہے — Chrome extensions اور mobile apps بناتا ہوں، اپنے بنیادی شعبے Blockchain development کے ساتھ! 💻✨",
     },
     ar: {
-      intro: "السلام عليكم يا شباب! 🙌 أنا محمد أيان صديقي (♦moayaan.eth♦). أنا مطور Full Stack Blockchain، مستثمر في العملات الرقمية، وحاصل على MBA in Blockchain Management مع خبرة سنتين في عالم Web3! 🚀",
+      intro:
+        "السلام عليكم يا شباب! 🙌 أنا محمد أيان صديقي (♦moayaan.eth♦). أنا مطور Full Stack Blockchain، مستثمر في العملات الرقمية، وحاصل على MBA in Blockchain Management مع خبرة سنتين في عالم Web3! 🚀",
       hatsList: "لقد شغلت عدة مناصب:",
       roles: [
         "Research Intern في شركة مقرها هونغ كونغ",
@@ -400,10 +416,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "PG Diploma in Blockchain Management من Cambridge International Qualifications (CIQ)",
         "MBA in Blockchain Management من University of Studies Guglielmo Marconi, Italy",
       ],
-      closing: "أستخدم بانتظام أدوات AI مثل Claude Code و Remotion و ClawdBot و Perplexity و Cursor لتعزيز إنتاجيتي في العمل الخاص والمهني. أقضي ساعات يومياً في البحث عن مشاريع crypto، ومراقبة اتجاهات السوق، والبقاء في المقدمة. أحب عمل vibe-code لمشاريع mini مفيدة بما في ذلك Chrome extensions وتطبيقات الهاتف، إلى جانب مجالي الأساسي Blockchain development! 💻✨"
+      closing:
+        "أستخدم بانتظام أدوات AI مثل Claude Code و Remotion و ClawdBot و Perplexity و Cursor لتعزيز إنتاجيتي في العمل الخاص والمهني. أقضي ساعات يومياً في البحث عن مشاريع crypto، ومراقبة اتجاهات السوق، والبقاء في المقدمة. أحب عمل vibe-code لمشاريع mini مفيدة بما في ذلك Chrome extensions وتطبيقات الهاتف، إلى جانب مجالي الأساسي Blockchain development! 💻✨",
     },
     fr: {
-      intro: "Assalamualaikum les amis! 🙌 Je suis Mohammad Ayaan Siddiqui (♦moayaan.eth♦). Je suis Développeur Full Stack Blockchain, Investisseur Crypto et titulaire d'un MBA in Blockchain Management avec 2 ans d'expérience dans le monde du Web3! 🚀",
+      intro:
+        "Assalamualaikum les amis! 🙌 Je suis Mohammad Ayaan Siddiqui (♦moayaan.eth♦). Je suis Développeur Full Stack Blockchain, Investisseur Crypto et titulaire d'un MBA in Blockchain Management avec 2 ans d'expérience dans le monde du Web3! 🚀",
       hatsList: "J'ai porté plusieurs casquettes:",
       roles: [
         "Research Intern dans une entreprise basée à Hong Kong",
@@ -413,10 +431,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "PG Diploma in Blockchain Management de Cambridge International Qualifications (CIQ)",
         "MBA in Blockchain Management de University of Studies Guglielmo Marconi, Italy",
       ],
-      closing: "J'utilise régulièrement des outils AI comme Claude Code, Remotion, ClawdBot, Perplexity et Cursor pour booster ma productivité dans mon travail privé et professionnel. Je passe des heures chaque jour à rechercher des projets crypto, observer les tendances du marché et garder une longueur d'avance. J'adore vibe-coder des mini projets utiles comme des Chrome extensions et des applications mobiles, en plus de mon domaine principal, le Blockchain development! 💻✨"
+      closing:
+        "J'utilise régulièrement des outils AI comme Claude Code, Remotion, ClawdBot, Perplexity et Cursor pour booster ma productivité dans mon travail privé et professionnel. Je passe des heures chaque jour à rechercher des projets crypto, observer les tendances du marché et garder une longueur d'avance. J'adore vibe-coder des mini projets utiles comme des Chrome extensions et des applications mobiles, en plus de mon domaine principal, le Blockchain development! 💻✨",
     },
     zh: {
-      intro: "Assalamualaikum 大家好！🙌 我是 Mohammad Ayaan Siddiqui (♦moayaan.eth♦)。我是一名 Full Stack Blockchain Developer、Crypto Investor，拥有 MBA in Blockchain Management 学位，在 Web3 领域有 2 年的经验！🚀",
+      intro:
+        "Assalamualaikum 大家好！🙌 我是 Mohammad Ayaan Siddiqui (♦moayaan.eth♦)。我是一名 Full Stack Blockchain Developer、Crypto Investor，拥有 MBA in Blockchain Management 学位，在 Web3 领域有 2 年的经验！🚀",
       hatsList: "我担任过多种角色：",
       roles: [
         "香港公司的 Research Intern",
@@ -426,10 +446,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "Cambridge International Qualifications (CIQ) 的 PG Diploma in Blockchain Management",
         "意大利 University of Studies Guglielmo Marconi 的 MBA in Blockchain Management",
       ],
-      closing: "我经常使用 AI 工具，如 Claude Code、Remotion、ClawdBot、Perplexity 和 Cursor，来提升我在私人和专业工作中的生产力。我每天花数小时研究 crypto 项目、观察市场趋势，保持领先。我喜欢 vibe-code 有用的 mini 项目，包括 Chrome extensions 和移动应用，同时专注于我的核心领域 Blockchain development！💻✨"
+      closing:
+        "我经常使用 AI 工具，如 Claude Code、Remotion、ClawdBot、Perplexity 和 Cursor，来提升我在私人和专业工作中的生产力。我每天花数小时研究 crypto 项目、观察市场趋势，保持领先。我喜欢 vibe-code 有用的 mini 项目，包括 Chrome extensions 和移动应用，同时专注于我的核心领域 Blockchain development！💻✨",
     },
     tr: {
-      intro: "Selamün Aleyküm arkadaşlar! 🙌 Ben Mohammad Ayaan Siddiqui (♦moayaan.eth♦). Full Stack Blockchain Developer, Crypto Investor ve MBA in Blockchain Management sahibiyim. Web3 dünyasında 2 yıllık deneyimim var! 🚀",
+      intro:
+        "Selamün Aleyküm arkadaşlar! 🙌 Ben Mohammad Ayaan Siddiqui (♦moayaan.eth♦). Full Stack Blockchain Developer, Crypto Investor ve MBA in Blockchain Management sahibiyim. Web3 dünyasında 2 yıllık deneyimim var! 🚀",
       hatsList: "Birçok rol üstlendim:",
       roles: [
         "Hong Kong merkezli bir firmada Research Intern",
@@ -439,10 +461,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "Cambridge International Qualifications (CIQ)'dan PG Diploma in Blockchain Management",
         "University of Studies Guglielmo Marconi, Italy'den MBA in Blockchain Management",
       ],
-      closing: "Düzenli olarak Claude Code, Remotion, ClawdBot, Perplexity ve Cursor gibi AI araçlarını kullanarak hem özel hem de profesyonel işlerimde üretkenliğimi artırıyorum. Her gün saatlerce crypto projelerini araştırıyor, piyasa trendlerini gözlemliyor ve her zaman bir adım önde olmaya çalışıyorum. Chrome extensions ve mobil uygulamalar dahil kullanışlı mini projeler vibe-code yapmayı seviyorum, ana alanım olan Blockchain development'ın yanı sıra! 💻✨"
+      closing:
+        "Düzenli olarak Claude Code, Remotion, ClawdBot, Perplexity ve Cursor gibi AI araçlarını kullanarak hem özel hem de profesyonel işlerimde üretkenliğimi artırıyorum. Her gün saatlerce crypto projelerini araştırıyor, piyasa trendlerini gözlemliyor ve her zaman bir adım önde olmaya çalışıyorum. Chrome extensions ve mobil uygulamalar dahil kullanışlı mini projeler vibe-code yapmayı seviyorum, ana alanım olan Blockchain development'ın yanı sıra! 💻✨",
     },
     ja: {
-      intro: "Assalamualaikum 皆さん！🙌 Mohammad Ayaan Siddiqui (♦moayaan.eth♦) です。Full Stack Blockchain Developer、Crypto Investor、そして MBA in Blockchain Management 取得者として、Web3 の世界で 2 年間活躍しています！🚀",
+      intro:
+        "Assalamualaikum 皆さん！🙌 Mohammad Ayaan Siddiqui (♦moayaan.eth♦) です。Full Stack Blockchain Developer、Crypto Investor、そして MBA in Blockchain Management 取得者として、Web3 の世界で 2 年間活躍しています！🚀",
       hatsList: "様々な役割を経験してきました：",
       roles: [
         "香港の企業で Research Intern",
@@ -452,10 +476,12 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "Cambridge International Qualifications (CIQ) で PG Diploma in Blockchain Management 取得",
         "イタリアの University of Studies Guglielmo Marconi で MBA in Blockchain Management 取得",
       ],
-      closing: "私は Claude Code、Remotion、ClawdBot、Perplexity、Cursor などの AI ツールを定期的に使用して、プライベートと仕事の両方で生産性を向上させています。毎日何時間も crypto プロジェクトをリサーチし、市場トレンドを観察し、常に先を行くようにしています。Chrome extensions やモバイルアプリなどの便利な mini プロジェクトを vibe-code するのが大好きです。もちろん、コア領域である Blockchain development と並行して！💻✨"
+      closing:
+        "私は Claude Code、Remotion、ClawdBot、Perplexity、Cursor などの AI ツールを定期的に使用して、プライベートと仕事の両方で生産性を向上させています。毎日何時間も crypto プロジェクトをリサーチし、市場トレンドを観察し、常に先を行くようにしています。Chrome extensions やモバイルアプリなどの便利な mini プロジェクトを vibe-code するのが大好きです。もちろん、コア領域である Blockchain development と並行して！💻✨",
     },
     ru: {
-      intro: "Ассаламу алейкум, друзья! 🙌 Я — Мохаммад Аян Сиддики (♦moayaan.eth♦). Я Full Stack Blockchain Developer, криптоинвестор и обладатель MBA in Blockchain Management с 2-летним опытом работы в мире Web3! 🚀",
+      intro:
+        "Ассаламу алейкум, друзья! 🙌 Я — Мохаммад Аян Сиддики (♦moayaan.eth♦). Я Full Stack Blockchain Developer, криптоинвестор и обладатель MBA in Blockchain Management с 2-летним опытом работы в мире Web3! 🚀",
       hatsList: "Я занимал множество ролей:",
       roles: [
         "Research Intern в компании из Гонконга",
@@ -465,7 +491,8 @@ MBA in Blockchain Management from University of Studies Guglielmo Marconi, Italy
         "PG Diploma in Blockchain Management от Cambridge International Qualifications (CIQ)",
         "MBA in Blockchain Management от University of Studies Guglielmo Marconi, Italy",
       ],
-      closing: "Я регулярно использую AI-инструменты, такие как Claude Code, Remotion, ClawdBot, Perplexity и Cursor, чтобы повысить свою продуктивность как в личной, так и в профессиональной работе. Я провожу часы каждый день, исследуя crypto-проекты, наблюдая за рыночными тенденциями и оставаясь впереди. Я люблю vibe-code полезные mini-проекты, включая Chrome extensions и мобильные приложения, наряду с моей основной областью — Blockchain development! 💻✨"
+      closing:
+        "Я регулярно использую AI-инструменты, такие как Claude Code, Remotion, ClawdBot, Perplexity и Cursor, чтобы повысить свою продуктивность как в личной, так и в профессиональной работе. Я провожу часы каждый день, исследуя crypto-проекты, наблюдая за рыночными тенденциями и оставаясь впереди. Я люблю vibe-code полезные mini-проекты, включая Chrome extensions и мобильные приложения, наряду с моей основной областью — Blockchain development! 💻✨",
     },
   },
   languages: [
