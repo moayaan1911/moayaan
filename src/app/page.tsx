@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CurrentYear } from "@/components/current-year";
 import { EthBackground } from "@/components/eth-background";
 import { SalaamShuffle } from "@/components/salaam-shuffle";
+import { GithubPreviewCard } from "@/components/github-preview-card";
 import { homeJsonLd, serializeJsonLd } from "@/lib/structured-data";
 
 export default function Home() {
@@ -89,7 +90,7 @@ export default function Home() {
                   <span className="muted">&amp; advanced research routes.</span>
                 </span>
                 <span className="value value-spaced">
-                  <span className="live"></span>Vibe coding personal projects.
+                  <span className="live"></span>Context Engineering personal projects.
                 </span>
               </div>
             </aside>
@@ -116,10 +117,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="StableCoin preview"
               >
-                <img
-                  src="https://opengraph.githubassets.com/1/moayaan1911/stablecoin"
-                  alt="StableCoin GitHub Open Graph preview"
-                />
+                <GithubPreviewCard />
               </a>
               <h3 className="ptitle">StableCoin</h3>
               <p className="pdesc">
@@ -273,7 +271,7 @@ export default function Home() {
               <span className="skill">Web3</span>
               <span className="skill">Next.js</span>
               <span className="skill">Smart Contracts</span>
-              <span className="skill">Vibe Coding</span>
+              <span className="skill">Context Engineering</span>
               <span className="skill">AI Tools</span>
               <span className="skill">Solidity</span>
               <span className="skill">Foundry</span>
@@ -360,7 +358,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Hashnode
+                      Blog
                     </a>
                   </li>
                   <li>
