@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
@@ -30,15 +31,15 @@ export const metadata: Metadata = {
 };
 
 export default function ResumePage() {
-  const resumePath = "/moayaan.eth%20RESUME.pdf";
+  const resumePath = "/MD_Ayaan_Siddiqui_Resume.pdf";
 
   return (
     <main className="resume-page">
       <div className="resume-shell">
         <header className="resume-header">
-          <a className="resume-back" href="/">
+          <Link className="resume-back" href="/">
             <span className="arr">←</span> BACK TO PORTFOLIO
-          </a>
+          </Link>
           <a
             className="resume-action"
             href={siteConfig.links.cal}

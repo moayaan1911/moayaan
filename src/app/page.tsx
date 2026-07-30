@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CurrentYear } from "@/components/current-year";
@@ -32,8 +33,9 @@ export default function Home() {
               </h1>
 
               <p className="credibility">
-                MBA in Blockchain Management <span className="sep">·</span>{" "}
-                Blockchain Developer
+                Published Researcher <span className="sep">·</span>{" "}
+                Blockchain Developer <span className="sep">·</span>{" "}
+                MBA in Blockchain Management
               </p>
 
               <div className="btn-row">
@@ -45,14 +47,14 @@ export default function Home() {
                 >
                   <span className="btn-stack">
                     <span className="btn-title">
-                      Hire Me <span className="arrow">→</span>
+                      Book a Call <span className="arrow">→</span>
                     </span>
-                    <span className="btn-sub">Available for work</span>
+                    <span className="btn-sub">Open for discussions</span>
                   </span>
                 </a>
-                <a className="btn" href="/resume">
+                <Link className="btn" href="/resume">
                   View Resume
-                </a>
+                </Link>
               </div>
 
               <div className="small-links">
@@ -83,11 +85,16 @@ export default function Home() {
               <div className="aside-block">
                 <span className="label">Currently</span>
                 <span className="value">
-                  <span className="live"></span>Open to new opportunities.
+                  <span className="live"></span>Open for collaborations.
                 </span>
                 <span className="value value-spaced">
-                  <span className="live"></span>Exploring further studies{" "}
-                  <span className="muted">&amp; advanced research routes.</span>
+                  <span className="live"></span>Pursuing further academic research on:
+                  <br />
+                  <span className="muted" style={{ marginLeft: 28 }}>Agentic Infrastructure on Blockchain</span>
+                  <br />
+                  <span className="muted" style={{ marginLeft: 28 }}>Shariah-Compliant DeFi</span>
+                  <br />
+                  <span className="muted" style={{ marginLeft: 28 }}>Autonomous Agent Economies</span>
                 </span>
                 <span className="value value-spaced">
                   <span className="live"></span>Context Engineering personal projects.
@@ -225,7 +232,73 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section" data-screen-label="03 Experience">
+        <section
+          className="section"
+          data-screen-label="03 Publications"
+        >
+          <div className="section-head">
+            <h2>Publications</h2>
+            <span className="meta">Agentic Infrastructure / Solidity</span>
+          </div>
+
+          <div className="pubs-row">
+            <article className="pub">
+              <span className="num">01</span>
+              <div className="pthumb">
+                <img src="/coverResearch.png" alt="Research Paper cover" />
+              </div>
+              <h3 className="ptitle">
+                A Cross-Chain Architecture ..... ..... Ethereum
+              </h3>
+              <p className="pdesc">
+                Agentic infrastructure on blockchain - x402 protocol for
+                autonomous AI agent payments and ERC-8004 for decentralized
+                agent identity frameworks.
+              </p>
+              <div className="plinks">
+                <a
+                  href="https://zenodo.org/records/21394562"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Zenodo
+                </a>
+                <Link href="/publications/research">
+                  View Here
+                </Link>
+              </div>
+            </article>
+
+            <article className="pub">
+              <span className="num">02</span>
+              <div className="pthumb">
+                <img src="/coverEbook.png" alt="Ebook cover" />
+              </div>
+              <h3 className="ptitle">
+                Solidity Smart Contracts: From Zero to Production
+              </h3>
+              <p className="pdesc">
+                A Foundry-first guide to writing, testing, and deploying
+                production-grade Solidity smart contracts on EVM-compatible
+                blockchains.
+              </p>
+              <div className="plinks">
+                <a
+                  href="https://leanpub.com/solidity-ebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Leanpub
+                </a>
+                <Link href="/publications/ebook">
+                  View Here
+                </Link>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section className="section" data-screen-label="04 Experience">
           <div className="section-head">
             <h2>Experience</h2>
             <span className="meta">Bitcoin DeFi / Crypto Wallet / Data Economy</span>
@@ -302,9 +375,9 @@ export default function Home() {
                     <a href="mailto:moayaan.eth@gmail.com">Email</a>
                   </li>
                   <li>
-                    <a href="/resume">
+                    <Link href="/resume">
                       Resume
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a
@@ -382,9 +455,9 @@ export default function Home() {
                 </ul>
               </div>
 
-              <a href="/support" className="footer-support-link">
+              <Link href="/support" className="footer-support-link">
                 Support my work
-              </a>
+              </Link>
             </div>
           </div>
         </div>

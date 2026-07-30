@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 const addresses = [
   {
@@ -56,9 +57,9 @@ export default function SupportPage() {
     <div className="support-page">
       <main className="support-wrap">
         <nav className="support-topnav">
-          <a className="support-back" href="/">
+          <Link className="support-back" href="/">
             <span className="arr">←</span> BACK TO PORTFOLIO
-          </a>
+          </Link>
           <span className="crumb">SUPPORT</span>
         </nav>
 
