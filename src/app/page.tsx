@@ -295,6 +295,33 @@ export default function Home() {
                 </Link>
               </div>
             </article>
+
+            <article className="pub">
+              <span className="num">03</span>
+              <div className="pthumb">
+                <img src="/coverResearch2.png" alt="Research Paper cover" />
+              </div>
+              <h3 className="ptitle">
+                Autonomous Agent Economies on Blockchain
+              </h3>
+              <p className="pdesc">
+                Business models and value creation via the x402 protocol in
+                Web3 - exploring how agent payments enable new decentralized
+                business models.
+              </p>
+              <div className="plinks">
+                <a
+                  href="https://zenodo.org/records/21730620"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Zenodo
+                </a>
+                <Link href="/publications/research-dba">
+                  View Here
+                </Link>
+              </div>
+            </article>
           </div>
         </section>
 

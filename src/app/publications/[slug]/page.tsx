@@ -36,6 +36,15 @@ const publications: Record<
     linkLabel: "View on Leanpub",
     linkUrl: "https://leanpub.com/solidity-ebook",
   },
+  "research-dba": {
+    title: "Research Paper | Mohammad Ayaan",
+    description:
+      "Autonomous Agent Economies on Blockchain — Business Models and Value Creation via the x402 Protocol in Web3, a research paper on agent-based business models in decentralized ecosystems.",
+    cover: "/coverResearch2.png",
+    pdf: "/Agent_Economies_DBA_Paper.pdf",
+    linkLabel: "View on Zenodo",
+    linkUrl: "https://zenodo.org/records/21730620",
+  },
 };
 
 function getJsonLd(slug: string, pub: (typeof publications)[string]) {
@@ -99,6 +108,35 @@ function getJsonLd(slug: string, pub: (typeof publications)[string]) {
     };
   }
 
+  if (slug === "research-dba") {
+    return {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      headline: "Autonomous Agent Economies on Blockchain",
+      description: pub.description,
+      url: "https://zenodo.org/records/21730620",
+      doi: "10.5281/zenodo.21730620",
+      author: {
+        "@type": "Person",
+        name: "MD Ayaan Siddiqui",
+        url: "https://moayaan.com",
+      },
+      datePublished: "2026-08-01",
+      publisher: {
+        "@type": "Organization",
+        name: "Zenodo",
+        url: "https://zenodo.org",
+      },
+      keywords:
+        "blockchain, autonomous agents, x402, Web3, business models, DeFi, agent economies, decentralized business, value creation",
+      isPartOf: {
+        "@type": "CreativeWorkSeries",
+        name: "Preprint",
+        url: "https://zenodo.org",
+      },
+    };
+  }
+
   return null;
 }
 
@@ -138,6 +176,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "citation_publication_date": "2026-07-16",
       "citation_journal_title": "Zenodo Preprint",
       "citation_pdf_url": absoluteUrl("/x402_ERC8004_Paper_SHORT.pdf"),
+    };
+  }
+
+  if (slug === "research-dba") {
+    base.other = {
+      "citation_author": "MD Ayaan Siddiqui",
+      "citation_title": "Autonomous Agent Economies on Blockchain",
+      "citation_doi": "10.5281/zenodo.21730620",
+      "citation_publication_date": "2026-08-01",
+      "citation_journal_title": "Zenodo Preprint",
+      "citation_pdf_url": absoluteUrl("/Agent_Economies_DBA_Paper.pdf"),
     };
   }
 
